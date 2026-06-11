@@ -5,345 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Valentino Garcia's computer science portfolio featuring AI-integrated full-stack projects, mobile apps, and Bluetooth Low Energy research interests."
+      content="Valentino Garcia, aspiring software engineer building clean web, AI, and connected-system projects."
     />
-    <title>Valentino Garcia | CS Student Portfolio</title>
+    <title>Valentino Garcia | Aspiring Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@500;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/style/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Valentino Garcia home">
-        <span class="brand-mark">VG</span>
-        <span>Valentino Garcia</span>
-      </a>
-
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="site-nav" aria-label="Primary navigation" data-nav>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#story">Story</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <img
           class="hero-art"
-          src="assets/images/comic-code-hero.png"
-          alt="Comic-style illustration of a student software engineer coding at a laptop"
+          src="assets/images/abstract-hero.png"
+          alt="Dark abstract 3D forms with soft cyan and amber light"
         />
-        <div class="hero-shade"></div>
+        <div class="hero-wash"></div>
+
+        <div class="topline" aria-label="Portfolio metadata">
+          <a class="logo" href="#top" aria-label="Valentino Garcia home">Valentino._</a>
+          <p>Available for software engineering roles</p>
+          <a href="mailto:your.email@example.com">Contact</a>
+        </div>
 
         <div class="hero-copy">
-          <p class="burst-label">Computer Science BSc @ King's College London</p>
-          <h1 id="hero-title">Valentino Garcia</h1>
-          <p class="hero-line">
-            Building AI-powered web apps, mobile products, and connected-system experiments with a software engineer's
-            mindset.
-          </p>
-
-          <div class="hero-actions">
-            <a class="comic-button primary" href="#projects">See Projects</a>
-            <a class="comic-button secondary" href="https://github.com/darkcom109" target="_blank" rel="noreferrer"
-              >GitHub</a
-            >
-          </div>
+          <p class="kicker">Aspiring Software Engineer</p>
+          <h1 id="hero-title">
+            <span>Valentino</span>
+            <span>Garcia</span>
+          </h1>
+          <p class="hero-note">Full-stack / AI / connected systems</p>
         </div>
 
-        <div class="sound-tags" aria-label="Portfolio highlights">
-          <span>BUILD!</span>
-          <span>TRAIN!</span>
-          <span>SHIP!</span>
+        <div class="hero-actions" aria-label="Primary links">
+          <a href="#work">View Work</a>
+          <a href="#" aria-label="Resume link placeholder">Resume</a>
+          <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </section>
 
-      <section class="intro-strip" aria-label="Quick profile">
-        <div>
-          <span>Now</span>
-          <strong>Computer Science BSc student at King's College London, graduating in 2027.</strong>
-        </div>
-        <div>
-          <span>Focus</span>
-          <strong>Full-stack development, AI integration, backend systems, and mobile apps.</strong>
-        </div>
-        <div>
-          <span>Research</span>
-          <strong>Interested in Bluetooth Low Energy and connected-device software.</strong>
-        </div>
+      <section class="intro-line" aria-label="Short profile">
+        <p>
+          Computer Science BSc student at King's College London, building practical web apps, AI tools, and connected
+          systems.
+        </p>
       </section>
 
-      <section class="section-shell profile-panel" aria-labelledby="profile-title">
-        <div class="panel-label">Origin Story</div>
-        <div>
-          <h2 id="profile-title">I turn ideas into shipped apps, AI tools, and connected-system prototypes.</h2>
-          <p>
-            I am interested in software engineering across full-stack development, AI-integrated products, and research
-            in Bluetooth Low Energy. I am currently averaging 75%, a First Class level, while building practical projects
-            that combine product thinking with computer science fundamentals.
-          </p>
-        </div>
-      </section>
-
-      <section class="section-shell projects-section" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <div>
-            <p class="panel-label">Issue #01</p>
-            <h2 id="projects-title">Featured Projects</h2>
-          </div>
-
-          <div class="filter-group" aria-label="Filter projects">
-            <button class="filter-chip is-active" type="button" data-filter="all">All</button>
-            <button class="filter-chip" type="button" data-filter="ai">AI</button>
-            <button class="filter-chip" type="button" data-filter="fullstack">Full-stack</button>
-            <button class="filter-chip" type="button" data-filter="mobile">Mobile</button>
-          </div>
+      <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="section-head">
+          <span>01</span>
+          <h2 id="work-title">Selected work</h2>
         </div>
 
-        <div class="comic-grid" data-project-grid>
-          <article class="comic-card main-card" data-category="ai">
-            <div class="card-corner">01</div>
-            <p class="card-kicker">AI + hardware</p>
-            <h3>HackLondon2026</h3>
-            <p>
-              An OpenCV, Claude API, and ESP32 project that detects a student's concentration while studying and changes
-              a Tamagotchi-style device state based on their focus score.
-            </p>
-            <ul class="tag-list" aria-label="HackLondon2026 stack">
-              <li>Python</li>
-              <li>OpenCV</li>
-              <li>ESP32</li>
-              <li>Claude API</li>
-            </ul>
-            <a class="card-link" href="https://github.com/darkcom109/HackLondon2026" target="_blank" rel="noreferrer"
-              >GitHub</a
-            >
+        <div class="work-list">
+          <article class="work-item">
+            <span class="work-number">01</span>
+            <div>
+              <h3>HackLondon2026</h3>
+              <p>Focus-aware study device.</p>
+            </div>
+            <p>Python / OpenCV / ESP32 / Claude API</p>
+            <div class="work-links">
+              <a href="#" aria-label="HackLondon2026 live demo placeholder">Live</a>
+              <a href="https://github.com/darkcom109/HackLondon2026" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
           </article>
 
-          <article class="comic-card blue-card" data-category="fullstack">
-            <div class="card-corner">02</div>
-            <p class="card-kicker">Learning platform</p>
-            <h3>iGITit</h3>
-            <p>
-              A practical Git learning platform with a working terminal experience, built to teach beginner and
-              intermediate Git commands.
-            </p>
-            <ul class="tag-list" aria-label="iGITit stack">
-              <li>Python</li>
-              <li>Django</li>
-              <li>SQLite</li>
-              <li>Render</li>
-            </ul>
-            <a class="card-link" href="https://github.com/darkcom109/iGITit" target="_blank" rel="noreferrer"
-              >GitHub</a
-            >
+          <article class="work-item">
+            <span class="work-number">02</span>
+            <div>
+              <h3>iGITit</h3>
+              <p>Git practice with terminal flow.</p>
+            </div>
+            <p>Python / Django / SQLite / Render</p>
+            <div class="work-links">
+              <a href="#" aria-label="iGITit live demo placeholder">Live</a>
+              <a href="https://github.com/darkcom109/iGITit" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
           </article>
 
-          <article class="comic-card red-card" data-category="ai">
-            <div class="card-corner">03</div>
-            <p class="card-kicker">AI strategy engine</p>
-            <h3>PokerFace.ai</h3>
-            <p>
-              A poker practice application that combines AI guidance with a Monte Carlo algorithmic engine for
-              statistical card analysis.
-            </p>
-            <ul class="tag-list" aria-label="PokerFace.ai stack">
-              <li>Python</li>
-              <li>Django</li>
-              <li>Monte Carlo</li>
-              <li>Ollama</li>
-            </ul>
-            <a class="card-link" href="https://github.com/darkcom109/PokerFace.ai" target="_blank" rel="noreferrer"
-              >GitHub</a
-            >
-          </article>
-
-          <article class="comic-card mint-card" data-category="mobile">
-            <div class="card-corner">04</div>
-            <p class="card-kicker">Mobile + AI</p>
-            <h3>RemedyDose</h3>
-            <p>
-              A React Native and Expo medication app with local authentication, scheduled notifications, Appwrite, and
-              Hugging Face-powered assistance.
-            </p>
-            <ul class="tag-list" aria-label="RemedyDose stack">
-              <li>TypeScript</li>
-              <li>React Native</li>
-              <li>Expo</li>
-              <li>Appwrite</li>
-            </ul>
-            <a class="card-link" href="https://github.com/darkcom109/RemedyDose" target="_blank" rel="noreferrer"
-              >GitHub</a
-            >
-          </article>
-
-          <article class="comic-card purple-card" data-category="ai">
-            <div class="card-corner">05</div>
-            <p class="card-kicker">AI web builder</p>
-            <h3>Webify.ai-v3</h3>
-            <p>
-              A faster AI website builder built with React, Tailwind CSS, and FastAPI for asynchronous generation and
-              rendering workflows.
-            </p>
-            <ul class="tag-list" aria-label="Webify.ai-v3 stack">
-              <li>React</li>
-              <li>Tailwind</li>
-              <li>FastAPI</li>
-              <li>OpenAI API</li>
-            </ul>
-            <a class="card-link" href="https://github.com/darkcom109/Webify.ai-v3" target="_blank" rel="noreferrer"
-              >GitHub</a
-            >
-          </article>
-
-          <article class="comic-card orange-card" data-category="fullstack">
-            <div class="card-corner">06</div>
-            <p class="card-kicker">Real-time app</p>
-            <h3>Quick-Chat</h3>
-            <p>
-              A MERN real-time chat application using Socket.io, Cloudinary image storage, MongoDB, Express, React, and
-              Node.js.
-            </p>
-            <ul class="tag-list" aria-label="Quick-Chat stack">
-              <li>React</li>
-              <li>MongoDB</li>
-              <li>Node.js</li>
-              <li>Socket.io</li>
-            </ul>
-            <a class="card-link" href="https://github.com/darkcom109/Quick-Chat" target="_blank" rel="noreferrer"
-              >GitHub</a
-            >
+          <article class="work-item">
+            <span class="work-number">03</span>
+            <div>
+              <h3>Quick-Chat</h3>
+              <p>Real-time MERN messaging app.</p>
+            </div>
+            <p>React / Node.js / MongoDB / Socket.io</p>
+            <div class="work-links">
+              <a href="#" aria-label="Quick-Chat live demo placeholder">Live</a>
+              <a href="https://github.com/darkcom109/Quick-Chat" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="skills-section" id="skills" aria-labelledby="skills-title">
-        <div class="section-shell skills-layout">
-          <div>
-            <p class="panel-label">Issue #02</p>
-            <h2 id="skills-title">Power-Ups</h2>
-          </div>
-
-          <div class="tech-icons" aria-label="Technology stack icons">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              alt="JavaScript"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-              alt="TypeScript"
-            />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
-              alt="Tailwind CSS"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-              alt="Bootstrap"
-            />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-              alt="PostgreSQL"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/appwrite/appwrite-original.svg"
-              alt="Appwrite"
-            />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
-          </div>
-
-          <div class="skills-list">
-            <article>
-              <span>Languages</span>
-              <p>Python, Java, C++, JavaScript, TypeScript, SQL</p>
-            </article>
-            <article>
-              <span>Frontend</span>
-              <p>React, HTML, CSS, Tailwind CSS, Bootstrap, responsive layouts</p>
-            </article>
-            <article>
-              <span>Backend</span>
-              <p>Node.js, Express, Flask, Django, FastAPI, REST APIs</p>
-            </article>
-            <article>
-              <span>Databases</span>
-              <p>MySQL, SQLite, PostgreSQL, Appwrite, MongoDB</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-shell story-section" id="story" aria-labelledby="story-title">
-        <div class="section-heading">
-          <div>
-            <p class="panel-label">Issue #03</p>
-            <h2 id="story-title">The Story So Far</h2>
-          </div>
+      <section class="stack-section" aria-labelledby="stack-title">
+        <div class="section-head">
+          <span>02</span>
+          <h2 id="stack-title">Stack</h2>
         </div>
 
-        <div class="story-line">
-          <article>
-            <time>2024 - 2027</time>
-            <h3>B.S. Computer Science</h3>
-            <p>King's College London, currently averaging 75%, a First Class level.</p>
-          </article>
-          <article>
-            <time>2025 - 2026</time>
-            <h3>Project Builder</h3>
-            <p>Shipping AI, full-stack, mobile, and developer-learning projects through GitHub.</p>
-          </article>
-          <article>
-            <time>2026</time>
-            <h3>Research Direction</h3>
-            <p>Exploring Bluetooth Low Energy and connected-device systems alongside web and AI work.</p>
-          </article>
+        <div class="stack-strip" aria-label="Technology stack">
+          <span>Python</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Django</span>
+          <span>FastAPI</span>
+          <span>MongoDB</span>
+          <span>PostgreSQL</span>
+          <span>Git</span>
         </div>
       </section>
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="section-shell contact-panel">
-          <div>
-            <p class="panel-label">Final Panel</p>
-            <h2 id="contact-title">Open to software engineering opportunities and project conversations.</h2>
-          </div>
-
-          <div class="contact-actions">
-            <a class="comic-button primary" href="https://github.com/darkcom109" target="_blank" rel="noreferrer"
-              >GitHub</a
-            >
-            <span class="contact-note">Add email + LinkedIn when ready.</span>
-          </div>
+        <p class="kicker">Open to internships and junior roles</p>
+        <h2 id="contact-title">Let's build something clean.</h2>
+        <div class="contact-links">
+          <a href="mailto:your.email@example.com">Email</a>
+          <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="#" aria-label="LinkedIn profile placeholder">LinkedIn</a>
+          <a href="#" aria-label="Resume link placeholder">Resume</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span data-year></span> Valentino Garcia</p>
-      <a href="#top">Back to top</a>
+      <span>&copy; <span data-year></span> Valentino Garcia</span>
+      <a href="#top">Top</a>
     </footer>
 
     <script src="assets/scripts/app.js"></script>
