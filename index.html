@@ -26,169 +26,212 @@
         />
         <div class="hero-wash"></div>
 
-        <div class="topline" aria-label="Portfolio metadata">
+        <header class="topline" aria-label="Primary header">
           <a class="logo" href="#top" aria-label="Valentino Garcia home">Valentino<span>._</span></a>
-        </div>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#work">Work</a>
+            <a href="#stack">Stack</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a class="nav-cta" href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
+        </header>
 
-        <div class="hero-copy">
-          <p class="kicker">Specialising in Software Engineering</p>
-          <h1 id="hero-title">
-            <span>Valentino</span>
-            <em>Garcia</em>
-          </h1>
-          <p class="hero-note">Building polished web apps, AI tools, and connected systems.</p>
-          <div class="hero-actions" aria-label="Primary links">
-            <a href="#work">View Work</a>
-            <a href="#" aria-label="Resume link placeholder">Resume</a>
-            <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="mailto:your.email@example.com">Contact</a>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="kicker">Software engineering portfolio</p>
+            <h1 id="hero-title">
+              <span>Valentino</span>
+              <em>Garcia</em>
+            </h1>
+            <p class="hero-note">
+              Computer science student building polished web apps, AI tools, and connected systems with a product mindset.
+            </p>
+            <div class="hero-actions" aria-label="Primary links">
+              <a class="action-primary" href="#work">View Work</a>
+              <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="#contact">Contact</a>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="intro-section" aria-label="Portfolio introduction">
+        <p class="intro-lede">
+          I build projects that balance sharp presentation with working systems behind the surface.
+        </p>
+        <div class="intro-points">
+          <p>
+            My strongest work connects interfaces with backend logic, AI APIs, real-time state, and hardware experiments.
+          </p>
+          <p>
+            I aim for clear routes, accessible UI, readable code, and deployments that people can actually try.
+          </p>
         </div>
       </section>
 
       <section class="work-section" id="work" aria-labelledby="work-title">
         <div class="section-heading">
           <p class="kicker">Selected work</p>
-          <h2 id="work-title">Projects with a product feel.</h2>
+          <h2 id="work-title">Sharp, practical builds.</h2>
+          <p>
+            A focused set of projects showing full-stack delivery, product polish, and experimentation across AI and connected devices.
+          </p>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card project-featured">
-            <div class="project-visual focus-visual" aria-hidden="true">
-              <div class="scan-card">
-                <span>Focus score</span>
-                <strong>87%</strong>
-                <div></div>
-              </div>
-              <div class="device-card">
-                <span>ESP32</span>
-                <i></i>
-              </div>
-              <div class="orb orb-one"></div>
-              <div class="orb orb-two"></div>
-            </div>
+        <div class="project-list">
+          <article class="project-card">
+            <a
+              class="project-visual visual-focus"
+              href="https://github.com/darkcom109/HackLondon2026"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open HackLondon2026 repository"
+            >
+              <span class="visual-label">AI + Hardware</span>
+              <span class="visual-index">01</span>
+            </a>
             <div class="project-copy">
               <span class="project-index">01</span>
               <h3>HackLondon2026</h3>
-              <p>Focus-aware study companion using computer vision, Claude API, and an ESP32 device.</p>
-              <div class="tag-row">
-                <span>Python</span>
-                <span>OpenCV</span>
-                <span>Claude API</span>
-                <span>ESP32</span>
-              </div>
-              <div class="project-links">
-                <a href="#" aria-label="HackLondon2026 live demo placeholder">Live</a>
-                <a href="https://github.com/darkcom109/HackLondon2026" target="_blank" rel="noreferrer">GitHub</a>
-              </div>
+              <p>
+                Focus-aware study companion using computer vision, Claude API, and an ESP32 device to connect software feedback with a physical signal.
+              </p>
+              <ul class="tag-row" aria-label="HackLondon2026 technologies">
+                <li>Python</li>
+                <li>OpenCV</li>
+                <li>Claude API</li>
+                <li>ESP32</li>
+              </ul>
+              <a class="text-link" href="https://github.com/darkcom109/HackLondon2026" target="_blank" rel="noreferrer">
+                View repository
+              </a>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-visual terminal-visual" aria-hidden="true">
-              <div class="terminal-window">
-                <span></span>
-                <span></span>
-                <span></span>
-                <p>$ git commit -m "ship"</p>
-                <p>$ git push origin main</p>
-              </div>
-            </div>
+            <a
+              class="project-visual visual-git"
+              href="https://github.com/darkcom109/iGITit"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open iGITit repository"
+            >
+              <span class="visual-label">Learning platform</span>
+              <span class="visual-index">02</span>
+            </a>
             <div class="project-copy">
               <span class="project-index">02</span>
               <h3>iGITit</h3>
-              <p>Git learning platform with a practical terminal-style flow for beginners.</p>
-              <div class="tag-row">
-                <span>Django</span>
-                <span>SQLite</span>
-                <span>Render</span>
-              </div>
-              <div class="project-links">
-                <a href="#" aria-label="iGITit live demo placeholder">Live</a>
-                <a href="https://github.com/darkcom109/iGITit" target="_blank" rel="noreferrer">GitHub</a>
-              </div>
+              <p>
+                Git learning platform designed around a practical terminal-style flow, helping beginners build confidence through repeatable commands.
+              </p>
+              <ul class="tag-row" aria-label="iGITit technologies">
+                <li>Django</li>
+                <li>SQLite</li>
+                <li>Render</li>
+              </ul>
+              <a class="text-link" href="https://github.com/darkcom109/iGITit" target="_blank" rel="noreferrer">
+                View repository
+              </a>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-visual chat-visual" aria-hidden="true">
-              <div class="phone-frame">
-                <span></span>
-                <p>Hey, are you online?</p>
-                <p>Socket connected.</p>
-                <p>Image uploaded.</p>
-              </div>
-            </div>
+            <a
+              class="project-visual visual-chat"
+              href="https://github.com/darkcom109/Quick-Chat"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Quick-Chat repository"
+            >
+              <span class="visual-label">Realtime MERN</span>
+              <span class="visual-index">03</span>
+            </a>
             <div class="project-copy">
               <span class="project-index">03</span>
               <h3>Quick-Chat</h3>
-              <p>Real-time MERN messaging app with sockets, media upload, and persistent chat state.</p>
-              <div class="tag-row">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
-                <span>Socket.io</span>
-              </div>
-              <div class="project-links">
-                <a href="#" aria-label="Quick-Chat live demo placeholder">Live</a>
-                <a href="https://github.com/darkcom109/Quick-Chat" target="_blank" rel="noreferrer">GitHub</a>
-              </div>
+              <p>
+                Real-time messaging app with sockets, media upload, and persistent chat state across a modern MERN stack.
+              </p>
+              <ul class="tag-row" aria-label="Quick-Chat technologies">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Socket.io</li>
+              </ul>
+              <a class="text-link" href="https://github.com/darkcom109/Quick-Chat" target="_blank" rel="noreferrer">
+                View repository
+              </a>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="stack-section" aria-labelledby="stack-title">
+      <section class="stack-section" id="stack" aria-labelledby="stack-title">
         <div class="section-heading">
           <p class="kicker">Main stack</p>
-          <h2 id="stack-title">The tools I reach for first.</h2>
+          <h2 id="stack-title">Tools for building, testing, and shipping.</h2>
         </div>
 
-        <div class="stack-spotlight">
-          <article>
-            <span>Frontend</span>
-            <h3>React / TypeScript / Vite / Tailwind / shadcn/ui / Vitest</h3>
+        <div class="stack-layout">
+          <article class="stack-column">
+            <span class="stack-label">Frontend</span>
+            <h3>Interfaces with strong structure and fast feedback loops.</h3>
+            <ul class="stack-list">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Vite</li>
+              <li>Tailwind</li>
+              <li>shadcn/ui</li>
+              <li>Vitest</li>
+            </ul>
           </article>
-          <article>
-            <span>Backend</span>
-            <h3>Prisma / Express / PostgreSQL</h3>
+          <article class="stack-column">
+            <span class="stack-label">Backend</span>
+            <h3>APIs and data flows that stay understandable as projects grow.</h3>
+            <ul class="stack-list">
+              <li>Prisma</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+              <li>Django</li>
+              <li>FastAPI</li>
+              <li>SQLite</li>
+            </ul>
           </article>
         </div>
 
-        <details class="secondary-stack">
-          <summary>Also worked with</summary>
-          <div class="stack-cloud">
-            <span>Python</span>
-            <span>Django</span>
-            <span>FastAPI</span>
-            <span>Java</span>
-            <span>C++</span>
-            <span>React Native</span>
-            <span>Expo</span>
-            <span>AI APIs</span>
-            <span>Cloudinary</span>
-            <span>Socket.io</span>
-            <span>BLE</span>
-            <span>Arduino</span>
-          </div>
-        </details>
+        <div class="tool-strip" aria-label="Additional tools">
+          <span>Python</span>
+          <span>Java</span>
+          <span>C++</span>
+          <span>React Native</span>
+          <span>Expo</span>
+          <span>AI APIs</span>
+          <span>Cloudinary</span>
+          <span>BLE</span>
+          <span>Arduino</span>
+        </div>
       </section>
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <p class="kicker">Open to internships and junior roles</p>
-        <h2 id="contact-title">Let's build something polished.</h2>
+        <div class="contact-copy">
+          <p class="kicker">Open to internships and junior roles</p>
+          <h2 id="contact-title">Let's build something polished.</h2>
+          <p>
+            Interested in full-stack product work, AI-assisted tools, and systems that bridge software with devices.
+          </p>
+        </div>
         <div class="contact-links">
-          <a href="mailto:your.email@example.com">Email</a>
+          <a class="action-primary" href="mailto:your.email@example.com">Email</a>
           <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="#" aria-label="LinkedIn profile placeholder">LinkedIn</a>
-          <a href="#" aria-label="Resume link placeholder">Resume</a>
+          <a href="#top">Back to top</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>&copy; <span data-year></span> Valentino Garcia</span>
-      <a href="#top">Top</a>
+      <span>Software engineering portfolio</span>
     </footer>
 
     <script src="assets/scripts/app.js"></script>
