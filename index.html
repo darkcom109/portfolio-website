@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Valentino Garcia, aspiring software engineer building clean web, AI, and connected-system projects."
+      content="Valentino Garcia, software engineering-focused computer science student building polished full-stack, AI, and connected-system projects."
     />
-    <title>Valentino Garcia | Aspiring Software Engineer</title>
+    <title>Valentino Garcia | Software Engineer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/style/style.css" />
@@ -22,110 +22,161 @@
         <img
           class="hero-art"
           src="assets/images/abstract-hero.png"
-          alt="Dark abstract 3D forms with soft cyan and amber light"
+          alt="Dark abstract 3D forms with soft blue, violet, and amber light"
         />
         <div class="hero-wash"></div>
 
         <div class="topline" aria-label="Portfolio metadata">
-          <a class="logo" href="#top" aria-label="Valentino Garcia home">Valentino._</a>
-          <p>Available for software engineering roles</p>
-          <a href="mailto:your.email@example.com">Contact</a>
+          <a class="logo" href="#top" aria-label="Valentino Garcia home">Valentino<span>._</span></a>
         </div>
 
         <div class="hero-copy">
-          <p class="kicker">Aspiring Software Engineer</p>
+          <p class="kicker">Specialising in Software Engineering</p>
           <h1 id="hero-title">
             <span>Valentino</span>
-            <span>Garcia</span>
+            <em>Garcia</em>
           </h1>
-          <p class="hero-note">Full-stack / AI / connected systems</p>
+          <p class="hero-note">Building polished web apps, AI tools, and connected systems.</p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a href="#work">View Work</a>
+            <a href="#" aria-label="Resume link placeholder">Resume</a>
+            <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:your.email@example.com">Contact</a>
+          </div>
         </div>
-
-        <div class="hero-actions" aria-label="Primary links">
-          <a href="#work">View Work</a>
-          <a href="#" aria-label="Resume link placeholder">Resume</a>
-          <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-      </section>
-
-      <section class="intro-line" aria-label="Short profile">
-        <p>
-          Computer Science BSc student at King's College London, building practical web apps, AI tools, and connected
-          systems.
-        </p>
       </section>
 
       <section class="work-section" id="work" aria-labelledby="work-title">
-        <div class="section-head">
-          <span>01</span>
-          <h2 id="work-title">Selected work</h2>
+        <div class="section-heading">
+          <p class="kicker">Selected work</p>
+          <h2 id="work-title">Projects with a product feel.</h2>
         </div>
 
-        <div class="work-list">
-          <article class="work-item">
-            <span class="work-number">01</span>
-            <div>
+        <div class="project-grid">
+          <article class="project-card project-featured">
+            <div class="project-visual focus-visual" aria-hidden="true">
+              <div class="scan-card">
+                <span>Focus score</span>
+                <strong>87%</strong>
+                <div></div>
+              </div>
+              <div class="device-card">
+                <span>ESP32</span>
+                <i></i>
+              </div>
+              <div class="orb orb-one"></div>
+              <div class="orb orb-two"></div>
+            </div>
+            <div class="project-copy">
+              <span class="project-index">01</span>
               <h3>HackLondon2026</h3>
-              <p>Focus-aware study device.</p>
-            </div>
-            <p>Python / OpenCV / ESP32 / Claude API</p>
-            <div class="work-links">
-              <a href="#" aria-label="HackLondon2026 live demo placeholder">Live</a>
-              <a href="https://github.com/darkcom109/HackLondon2026" target="_blank" rel="noreferrer">GitHub</a>
+              <p>Focus-aware study companion using computer vision, Claude API, and an ESP32 device.</p>
+              <div class="tag-row">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>Claude API</span>
+                <span>ESP32</span>
+              </div>
+              <div class="project-links">
+                <a href="#" aria-label="HackLondon2026 live demo placeholder">Live</a>
+                <a href="https://github.com/darkcom109/HackLondon2026" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
             </div>
           </article>
 
-          <article class="work-item">
-            <span class="work-number">02</span>
-            <div>
+          <article class="project-card">
+            <div class="project-visual terminal-visual" aria-hidden="true">
+              <div class="terminal-window">
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>$ git commit -m "ship"</p>
+                <p>$ git push origin main</p>
+              </div>
+            </div>
+            <div class="project-copy">
+              <span class="project-index">02</span>
               <h3>iGITit</h3>
-              <p>Git practice with terminal flow.</p>
-            </div>
-            <p>Python / Django / SQLite / Render</p>
-            <div class="work-links">
-              <a href="#" aria-label="iGITit live demo placeholder">Live</a>
-              <a href="https://github.com/darkcom109/iGITit" target="_blank" rel="noreferrer">GitHub</a>
+              <p>Git learning platform with a practical terminal-style flow for beginners.</p>
+              <div class="tag-row">
+                <span>Django</span>
+                <span>SQLite</span>
+                <span>Render</span>
+              </div>
+              <div class="project-links">
+                <a href="#" aria-label="iGITit live demo placeholder">Live</a>
+                <a href="https://github.com/darkcom109/iGITit" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
             </div>
           </article>
 
-          <article class="work-item">
-            <span class="work-number">03</span>
-            <div>
-              <h3>Quick-Chat</h3>
-              <p>Real-time MERN messaging app.</p>
+          <article class="project-card">
+            <div class="project-visual chat-visual" aria-hidden="true">
+              <div class="phone-frame">
+                <span></span>
+                <p>Hey, are you online?</p>
+                <p>Socket connected.</p>
+                <p>Image uploaded.</p>
+              </div>
             </div>
-            <p>React / Node.js / MongoDB / Socket.io</p>
-            <div class="work-links">
-              <a href="#" aria-label="Quick-Chat live demo placeholder">Live</a>
-              <a href="https://github.com/darkcom109/Quick-Chat" target="_blank" rel="noreferrer">GitHub</a>
+            <div class="project-copy">
+              <span class="project-index">03</span>
+              <h3>Quick-Chat</h3>
+              <p>Real-time MERN messaging app with sockets, media upload, and persistent chat state.</p>
+              <div class="tag-row">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Socket.io</span>
+              </div>
+              <div class="project-links">
+                <a href="#" aria-label="Quick-Chat live demo placeholder">Live</a>
+                <a href="https://github.com/darkcom109/Quick-Chat" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
             </div>
           </article>
         </div>
       </section>
 
       <section class="stack-section" aria-labelledby="stack-title">
-        <div class="section-head">
-          <span>02</span>
-          <h2 id="stack-title">Stack</h2>
+        <div class="section-heading">
+          <p class="kicker">Main stack</p>
+          <h2 id="stack-title">The tools I reach for first.</h2>
         </div>
 
-        <div class="stack-strip" aria-label="Technology stack">
-          <span>Python</span>
-          <span>JavaScript</span>
-          <span>TypeScript</span>
-          <span>React</span>
-          <span>Node.js</span>
-          <span>Django</span>
-          <span>FastAPI</span>
-          <span>MongoDB</span>
-          <span>PostgreSQL</span>
-          <span>Git</span>
+        <div class="stack-spotlight">
+          <article>
+            <span>Frontend</span>
+            <h3>React / TypeScript / Vite / Tailwind / shadcn/ui / Vitest</h3>
+          </article>
+          <article>
+            <span>Backend</span>
+            <h3>Prisma / Express / PostgreSQL</h3>
+          </article>
         </div>
+
+        <details class="secondary-stack">
+          <summary>Also worked with</summary>
+          <div class="stack-cloud">
+            <span>Python</span>
+            <span>Django</span>
+            <span>FastAPI</span>
+            <span>Java</span>
+            <span>C++</span>
+            <span>React Native</span>
+            <span>Expo</span>
+            <span>AI APIs</span>
+            <span>Cloudinary</span>
+            <span>Socket.io</span>
+            <span>BLE</span>
+            <span>Arduino</span>
+          </div>
+        </details>
       </section>
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <p class="kicker">Open to internships and junior roles</p>
-        <h2 id="contact-title">Let's build something clean.</h2>
+        <h2 id="contact-title">Let's build something polished.</h2>
         <div class="contact-links">
           <a href="mailto:your.email@example.com">Email</a>
           <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
