@@ -1,7 +1,6 @@
 const year = document.querySelector("[data-year]");
 const revealItems = document.querySelectorAll(".reveal");
 const canvas = document.querySelector("#orb-canvas");
-const aboutVisual = document.querySelector(".about-visual");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 document.documentElement.classList.add("js-enabled");
@@ -26,22 +25,6 @@ if ("IntersectionObserver" in window) {
   revealItems.forEach((item) => observer.observe(item));
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
-}
-
-if (aboutVisual && !reduceMotion) {
-  aboutVisual.addEventListener("pointermove", (event) => {
-    const rect = aboutVisual.getBoundingClientRect();
-    const x = ((event.clientX - rect.left) / rect.width) * 100;
-    const y = ((event.clientY - rect.top) / rect.height) * 100;
-
-    aboutVisual.style.setProperty("--pointer-x", `${x}%`);
-    aboutVisual.style.setProperty("--pointer-y", `${y}%`);
-  });
-
-  aboutVisual.addEventListener("pointerleave", () => {
-    aboutVisual.style.setProperty("--pointer-x", "50%");
-    aboutVisual.style.setProperty("--pointer-y", "50%");
-  });
 }
 
 if (canvas) {
