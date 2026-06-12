@@ -156,81 +156,300 @@
       </section>
 
       <section class="work section-shell" id="work" aria-labelledby="work-title">
-        <div class="section-heading reveal">
-          <p class="section-kicker">Selected work</p>
-          <h2 id="work-title">Projects with code behind the polish.</h2>
+        <div class="work-heading reveal">
+          <div>
+            <p class="section-kicker"><span>03</span> Selected work</p>
+            <h2 id="work-title">Built to work.<br /><em>Designed to feel good.</em></h2>
+          </div>
           <p>
-            A focused set of builds showing full-stack delivery, real-time state, AI experimentation, and hardware-aware
-            thinking.
+            A focused selection of full-stack, AI, and real-time projects, each shaped around a clear problem and a
+            usable result.
           </p>
         </div>
 
-        <div class="project-list">
-          <article class="project-row reveal">
-            <span class="project-index">01</span>
-            <div class="project-main">
+        <div class="project-grid">
+          <article class="project-card project-card-featured reveal">
+            <a
+              class="project-preview preview-focus"
+              href="https://github.com/darkcom109/HackLondon2026"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open the HackLondon2026 repository"
+            >
+              <div class="preview-toolbar">
+                <span>Focus assistant</span>
+                <span class="preview-live"><i></i>Live</span>
+              </div>
+              <div class="focus-dashboard">
+                <div class="focus-camera">
+                  <span class="camera-corner camera-corner-one"></span>
+                  <span class="camera-corner camera-corner-two"></span>
+                  <span class="camera-corner camera-corner-three"></span>
+                  <span class="camera-corner camera-corner-four"></span>
+                  <div class="focus-face">
+                    <span></span>
+                  </div>
+                  <p>Face detected</p>
+                </div>
+                <div class="focus-metrics">
+                  <div class="focus-score">
+                    <div>
+                      <strong>87</strong>
+                      <span>Focus score</span>
+                    </div>
+                  </div>
+                  <div class="device-signal">
+                    <span>ESP32 signal</span>
+                    <i></i><i></i><i></i><i></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>01</span>
+                <span>AI + Hardware</span>
+              </div>
               <h3>HackLondon2026</h3>
               <p>
                 Focus-aware study companion using computer vision, Claude API, and an ESP32 device to connect software
                 feedback with a physical signal.
               </p>
-              <p class="tech-line">Python / OpenCV / Claude API / ESP32</p>
+              <ul class="project-tags" aria-label="HackLondon2026 technologies">
+                <li>Python</li>
+                <li>OpenCV</li>
+                <li>Claude API</li>
+                <li>ESP32</li>
+              </ul>
+              <a class="project-link" href="https://github.com/darkcom109/HackLondon2026" target="_blank" rel="noreferrer">
+                View repository <span aria-hidden="true">&nearr;</span>
+              </a>
             </div>
-            <a class="text-link" href="https://github.com/darkcom109/HackLondon2026" target="_blank" rel="noreferrer">
-              Repository
-            </a>
           </article>
 
-          <article class="project-row reveal">
-            <span class="project-index">02</span>
-            <div class="project-main">
+          <article class="project-card reveal">
+            <a
+              class="project-preview preview-terminal"
+              href="https://github.com/darkcom109/iGITit"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open the iGITit repository"
+            >
+              <div class="terminal-bar">
+                <span></span><span></span><span></span>
+                <small>lesson-04</small>
+              </div>
+              <div class="terminal-body">
+                <p><i>$</i> git status</p>
+                <p class="terminal-response">On branch main</p>
+                <p><i>$</i> git add .</p>
+                <p><i>$</i> git commit -m <em>"progress"</em><b></b></p>
+              </div>
+              <div class="lesson-progress">
+                <span>Learning path</span>
+                <strong>04 / 08</strong>
+                <i></i>
+              </div>
+            </a>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>02</span>
+                <span>Learning platform</span>
+              </div>
               <h3>iGITit</h3>
               <p>
                 Git learning platform designed around a practical terminal-style flow, helping beginners build confidence
                 through repeatable commands.
               </p>
-              <p class="tech-line">Django / SQLite / Render</p>
+              <ul class="project-tags" aria-label="iGITit technologies">
+                <li>Django</li>
+                <li>SQLite</li>
+                <li>Render</li>
+              </ul>
+              <a class="project-link" href="https://github.com/darkcom109/iGITit" target="_blank" rel="noreferrer">
+                View repository <span aria-hidden="true">&nearr;</span>
+              </a>
             </div>
-            <a class="text-link" href="https://github.com/darkcom109/iGITit" target="_blank" rel="noreferrer">
-              Repository
-            </a>
           </article>
 
-          <article class="project-row reveal">
-            <span class="project-index">03</span>
-            <div class="project-main">
+          <article class="project-card reveal">
+            <a
+              class="project-preview preview-chat"
+              href="https://github.com/darkcom109/Quick-Chat"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open the Quick-Chat repository"
+            >
+              <div class="chat-sidebar">
+                <span class="chat-avatar"></span>
+                <span class="chat-avatar"></span>
+                <span class="chat-avatar"></span>
+                <span class="chat-avatar"></span>
+              </div>
+              <div class="chat-window">
+                <div class="chat-topbar">
+                  <span><i></i>Online</span>
+                  <small>Quick-Chat</small>
+                </div>
+                <div class="chat-messages">
+                  <p>Hey, is the build ready?</p>
+                  <p>Just shipped it.</p>
+                  <p>Perfect. Looks clean.</p>
+                </div>
+                <div class="chat-input"><span>Write a message...</span><i>&rarr;</i></div>
+              </div>
+            </a>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>03</span>
+                <span>Real-time MERN</span>
+              </div>
               <h3>Quick-Chat</h3>
               <p>
                 Real-time messaging app with sockets, media upload, and persistent chat state across a modern MERN stack.
               </p>
-              <p class="tech-line">React / Node.js / MongoDB / Socket.io</p>
+              <ul class="project-tags" aria-label="Quick-Chat technologies">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Socket.io</li>
+              </ul>
+              <a class="project-link" href="https://github.com/darkcom109/Quick-Chat" target="_blank" rel="noreferrer">
+                View repository <span aria-hidden="true">&nearr;</span>
+              </a>
             </div>
-            <a class="text-link" href="https://github.com/darkcom109/Quick-Chat" target="_blank" rel="noreferrer">
-              Repository
-            </a>
           </article>
         </div>
       </section>
 
       <section class="stack section-shell" id="stack" aria-labelledby="stack-title">
-        <div class="section-heading reveal">
-          <p class="section-kicker">Stack</p>
-          <h2 id="stack-title">A practical toolkit for shipping real projects.</h2>
+        <div class="stack-heading reveal">
+          <div>
+            <p class="section-kicker"><span>04</span> Stack</p>
+            <h2 id="stack-title">Tools chosen for <em>the job.</em></h2>
+          </div>
+          <p>
+            A focused toolkit for moving from interface to API, deployment, and connected experiences without adding
+            complexity for its own sake.
+          </p>
         </div>
 
-        <div class="stack-list reveal">
-          <div>
-            <h3>Frontend</h3>
-            <p>React / TypeScript / Vite / Tailwind / shadcn/ui / Vitest</p>
-          </div>
-          <div>
-            <h3>Backend</h3>
-            <p>Node.js / Express / Django / FastAPI / PostgreSQL / SQLite</p>
-          </div>
-          <div>
-            <h3>Systems</h3>
-            <p>Python / OpenCV / AI APIs / ESP32 / Arduino / BLE</p>
-          </div>
+        <div class="stack-grid">
+          <article class="stack-card stack-card-frontend reveal">
+            <div class="stack-card-heading">
+              <span>01 / Interface</span>
+              <h3>Frontend</h3>
+              <p>Fast, accessible interfaces with strong structure and polished interaction.</p>
+            </div>
+
+            <div class="stack-preview stack-preview-browser" aria-hidden="true">
+              <div class="stack-browser-bar">
+                <span></span><span></span><span></span>
+                <small>localhost:5173</small>
+              </div>
+              <div class="stack-browser-body">
+                <div class="stack-browser-nav"></div>
+                <div class="stack-browser-copy">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="stack-browser-button"></div>
+                <div class="stack-cursor">
+                  <i></i>
+                  <small>12ms</small>
+                </div>
+              </div>
+            </div>
+
+            <ul class="stack-tags" aria-label="Frontend technologies">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Vite</li>
+              <li>Tailwind</li>
+              <li>shadcn/ui</li>
+              <li>Vitest</li>
+            </ul>
+          </article>
+
+          <article class="stack-card stack-card-backend reveal">
+            <div class="stack-card-heading">
+              <span>02 / Logic</span>
+              <h3>Backend</h3>
+              <p>Readable APIs and data flows built to remain understandable as products grow.</p>
+            </div>
+
+            <div class="stack-preview stack-preview-api" aria-hidden="true">
+              <div class="api-request">
+                <span>POST</span>
+                <code>/api/projects</code>
+                <i>201</i>
+              </div>
+              <div class="api-request">
+                <span>GET</span>
+                <code>/api/messages</code>
+                <i>200</i>
+              </div>
+              <div class="api-request">
+                <span>PATCH</span>
+                <code>/api/profile</code>
+                <i>204</i>
+              </div>
+              <div class="api-pulse"></div>
+            </div>
+
+            <ul class="stack-tags" aria-label="Backend technologies">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Django</li>
+              <li>FastAPI</li>
+              <li>PostgreSQL</li>
+              <li>SQLite</li>
+            </ul>
+          </article>
+
+          <article class="stack-card stack-card-systems reveal">
+            <div class="stack-card-heading">
+              <span>03 / Connected</span>
+              <h3>Systems</h3>
+              <p>Software that can see, respond, and communicate with models and physical devices.</p>
+            </div>
+
+            <div class="stack-preview stack-preview-signal" aria-hidden="true">
+              <div class="signal-device">
+                <span>ESP32</span>
+                <i></i>
+              </div>
+              <div class="signal-wave">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <div class="signal-status"><span></span>Device connected</div>
+            </div>
+
+            <ul class="stack-tags" aria-label="Systems technologies">
+              <li>Python</li>
+              <li>OpenCV</li>
+              <li>AI APIs</li>
+              <li>ESP32</li>
+              <li>Arduino</li>
+              <li>BLE</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="stack-pipeline reveal" aria-label="Product delivery process">
+          <span>Idea</span>
+          <i></i>
+          <span>Interface</span>
+          <i></i>
+          <span>API</span>
+          <i></i>
+          <span>Test</span>
+          <i></i>
+          <span>Ship</span>
+          <b aria-hidden="true"></b>
         </div>
       </section>
 
