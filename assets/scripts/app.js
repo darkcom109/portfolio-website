@@ -1,6 +1,8 @@
 const year = document.querySelector("[data-year]");
 const revealItems = document.querySelectorAll(".reveal");
 const canvas = document.querySelector("#orb-canvas");
+const projectCards = document.querySelectorAll(".project-card");
+const stackCards = document.querySelectorAll(".stack-card");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 document.documentElement.classList.add("js-enabled");
@@ -25,6 +27,40 @@ if ("IntersectionObserver" in window) {
   revealItems.forEach((item) => observer.observe(item));
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
+}
+
+if (!reduceMotion) {
+  projectCards.forEach((card) => {
+    card.addEventListener("pointermove", (event) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width) * 100;
+      const y = ((event.clientY - rect.top) / rect.height) * 100;
+
+      card.style.setProperty("--spot-x", `${x}%`);
+      card.style.setProperty("--spot-y", `${y}%`);
+    });
+
+    card.addEventListener("pointerleave", () => {
+      card.style.setProperty("--spot-x", "50%");
+      card.style.setProperty("--spot-y", "50%");
+    });
+  });
+
+  stackCards.forEach((card) => {
+    card.addEventListener("pointermove", (event) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width) * 100;
+      const y = ((event.clientY - rect.top) / rect.height) * 100;
+
+      card.style.setProperty("--stack-x", `${x}%`);
+      card.style.setProperty("--stack-y", `${y}%`);
+    });
+
+    card.addEventListener("pointerleave", () => {
+      card.style.setProperty("--stack-x", "50%");
+      card.style.setProperty("--stack-y", "50%");
+    });
+  });
 }
 
 if (canvas) {
