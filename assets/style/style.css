@@ -302,8 +302,7 @@ main {
 
 .eyebrow,
 .section-kicker,
-.project-index,
-.principle-top > span:first-child {
+.project-index {
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 900;
