@@ -1207,6 +1207,24 @@ h1::first-line {
   justify-self: center;
 }
 
+.contact-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.contact-socials a,
+.contact footer > a {
+  transition: color 180ms ease;
+}
+
+.contact-socials a:hover,
+.contact-socials a:focus-visible,
+.contact footer > a:hover,
+.contact footer > a:focus-visible {
+  color: var(--ink);
+}
+
 .contact footer a:last-child {
   justify-self: end;
 }
