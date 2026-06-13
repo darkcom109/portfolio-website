@@ -1,7 +1,7 @@
 const hero = document.querySelector(".hero");
 const artwork = document.querySelector(".hero-art");
 const revealItems = document.querySelectorAll(".reveal");
-const projectVisuals = document.querySelectorAll(".project-visual");
+const projectVisuals = document.querySelectorAll(".project-tile-visual");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 document.documentElement.classList.add("js");
