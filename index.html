@@ -1,477 +1,491 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Valentino Garcia, computer science student and aspiring software engineer building full-stack, AI, and connected-system projects."
+      content="Valentino Garcia, a software engineer creating thoughtful digital products and connected experiences."
     />
-    <title>Valentino Garcia | Software Engineer Portfolio</title>
+    <title>Valentino Garcia | Digital Product Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="grain" aria-hidden="true"></div>
-
-    <main id="top">
-      <section class="hero section-shell" aria-labelledby="hero-title">
-        <div class="hero-scene" aria-hidden="true">
-          <div class="scene-plane scene-plane-one"></div>
-          <div class="scene-plane scene-plane-two"></div>
-          <div class="scene-plane scene-plane-three"></div>
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-art" aria-hidden="true">
+          <img src="assets/abstract-ribbon.png" alt="" />
+          <div class="hero-art-glow"></div>
         </div>
 
-        <div class="hero-content">
-          <header class="hero-topbar reveal">
-            <a class="hero-brand" href="#top" aria-label="Valentino Garcia home">Valentino<span>._</span></a>
-            <nav class="hero-nav" aria-label="Primary navigation">
-              <a href="#about">About</a>
-              <a href="#work">Work</a>
-              <a href="#stack">Stack</a>
-              <a href="#contact">Contact</a>
-            </nav>
-            <p class="hero-availability"><span class="pulse-dot"></span>Open to opportunities</p>
-          </header>
+        <header class="site-header">
+          <a class="brand" href="#top" aria-label="Valentino Garcia home">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span>Valentino Garcia</span>
+          </a>
 
-          <div class="hero-stage">
-            <div class="hero-copy reveal">
-              <p class="eyebrow">Software engineering portfolio</p>
-              <h1 id="hero-title">
-                <span>Valentino</span>
-                <em>Garcia</em>
-              </h1>
-              <p class="hero-lede">
-                I build <strong>full-stack products, AI tools, and connected systems</strong> with a focus on clarity,
-                performance, and polish.
-              </p>
-              <div class="hero-actions" aria-label="Primary links">
-                <a class="action-primary" href="#work">Explore my work <span aria-hidden="true">&#8600;</span></a>
-                <a class="action-secondary" href="#contact">Let's talk <span aria-hidden="true">&rarr;</span></a>
-              </div>
-              <ul class="hero-stack" aria-label="Core technologies">
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Python</li>
-                <li>Django</li>
-              </ul>
-            </div>
+          <nav aria-label="Primary navigation">
+            <a href="#experience">Experience</a>
+            <a href="#work">Projects</a>
+            <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="#contact">Contact</a>
+          </nav>
 
-            <div class="hero-visual reveal" aria-hidden="true">
-              <div class="visual-frame">
-                <div class="visual-grid"></div>
-                <div class="visual-orbit visual-orbit-one"></div>
-                <div class="visual-orbit visual-orbit-two"></div>
-                <div class="scene-sphere"></div>
-                <canvas id="orb-canvas"></canvas>
-                <span class="visual-label visual-label-top">Design / Develop / Deliver</span>
-                <span class="visual-label visual-label-side">01 — Portfolio</span>
-                <div class="visual-caption">
-                  <span>Current focus</span>
-                  <strong>Full-stack + AI systems</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-foot reveal" aria-hidden="true">
-            <span>Scroll to explore</span>
-            <span class="hero-foot-line"></span>
-            <span>Selected work / 2026</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="intro section-shell" id="about" aria-labelledby="about-title">
-        <div class="about-shell">
-          <div class="about-copy reveal">
-            <p class="section-kicker"><span>02</span> About</p>
-            <h2 id="about-title">I build digital products that feel <em>simple.</em></h2>
-            <p>Full-stack engineering, AI experiments, and connected systems with a product-first mindset.</p>
-            <a href="#work">Explore selected work <span aria-hidden="true">&rarr;</span></a>
-          </div>
-
-          <div class="about-studio reveal" aria-hidden="true">
-            <div class="studio-glow"></div>
-
-            <div class="studio-window studio-window-code">
-              <div class="studio-bar">
-                <span></span><span></span><span></span>
-                <small>build.ts</small>
-              </div>
-              <div class="studio-code">
-                <p><i>01</i><b>const</b> idea = <em>"useful"</em>;</p>
-                <p><i>02</i><b>function</b> build(product) &#123;</p>
-                <p><i>03</i><span>return</span> product.polish();</p>
-                <p><i>04</i>&#125;<strong class="code-cursor"></strong></p>
-              </div>
-            </div>
-
-            <div class="studio-window studio-window-ui">
-              <div class="studio-ui-top">
-                <span>Product surface</span>
-                <i></i>
-              </div>
-              <div class="studio-ui-title"></div>
-              <div class="studio-ui-line"></div>
-              <div class="studio-ui-line studio-ui-line-short"></div>
-              <div class="studio-ui-cards">
-                <span></span><span></span><span></span>
-              </div>
-            </div>
-
-            <div class="studio-chip studio-chip-one">Frontend</div>
-            <div class="studio-chip studio-chip-two">Backend</div>
-            <div class="studio-chip studio-chip-three">AI tools</div>
-
-            <div class="studio-status">
-              <span><i></i>Available for opportunities</span>
-              <span>London, UK</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-strengths" aria-label="Portfolio strengths">
-          <article class="about-strength reveal">
-            <span>01</span>
-            <h3>Design with intent</h3>
-            <p>Interfaces with clear hierarchy and purposeful interaction.</p>
-          </article>
-          <article class="about-strength reveal">
-            <span>02</span>
-            <h3>Build end to end</h3>
-            <p>From frontend details to APIs, data, and deployment.</p>
-          </article>
-          <article class="about-strength reveal">
-            <span>03</span>
-            <h3>Explore what is next</h3>
-            <p>AI workflows, real-time features, and connected devices.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="work section-shell" id="work" aria-labelledby="work-title">
-        <div class="work-heading reveal">
-          <div>
-            <p class="section-kicker"><span>03</span> Selected work</p>
-            <h2 id="work-title">Built to work.<br /><em>Designed to feel good.</em></h2>
-          </div>
-          <p>
-            A focused selection of full-stack, AI, and real-time projects, each shaped around a clear problem and a
-            usable result.
+          <p class="availability">
+            <i aria-hidden="true"></i>
+            <span class="availability-full">Open to software roles</span>
+            <span class="availability-short">Open</span>
           </p>
+        </header>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Software engineer / London, UK</p>
+          <h1 id="hero-title">
+            Full-stack, AI
+            & Connected Systems.
+          </h1>
+          <div class="hero-intro">
+            <p>
+              Currently a 2nd year computer science student at King's College London and
+              a Software Engineer Intern at Kajla Revenue Intelligence.
+            </p>
+            <div class="hero-actions">
+              <a class="hero-action-primary" href="#experience">View experience <span aria-hidden="true">&darr;</span></a>
+              <a href="#work">Side projects <span aria-hidden="true">&nearr;</span></a>
+            </div>
+          </div>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card project-card-featured reveal">
+        <div class="hero-proof" aria-label="Current experience and core technologies">
+          <div>
+            <span>Current role</span>
+            <strong>Software Engineer Intern</strong>
+            <small>Kajla Revenue Intelligence</small>
+          </div>
+          <div>
+            <span>Also</span>
+            <strong>Teaching Assistant</strong>
+            <small>Code Camp</small>
+          </div>
+          <div>
+            <span>Core toolkit</span>
+            <strong>Python / React / Cloudflare</strong>
+            <small>Full-stack + connected systems</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="work page-section" id="work" aria-labelledby="work-title">
+        <header class="work-compact-heading reveal">
+          <div>
+            <p class="section-index">02 / Side projects</p>
+            <h2 id="work-title">Built beyond <em>the brief.</em></h2>
+          </div>
+          <div class="work-heading-copy">
+            <p>Independent builds exploring AI, learning tools, real-time products, and connected hardware.</p>
+            <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">
+              View GitHub <span aria-hidden="true">&nearr;</span>
+            </a>
+          </div>
+        </header>
+
+        <div class="project-showcase">
+          <article class="project-tile project-tile-featured reveal">
             <a
-              class="project-preview preview-focus"
-              href="https://github.com/darkcom109/HackLondon2026"
+              class="project-tile-visual tile-remedy-visual"
+              href="https://github.com/darkcom109/RemedyDose"
               target="_blank"
               rel="noreferrer"
-              aria-label="Open the HackLondon2026 repository"
+              aria-label="View RemedyDose on GitHub"
             >
-              <div class="preview-toolbar">
-                <span>Focus assistant</span>
-                <span class="preview-live"><i></i>Live</span>
+              <div class="remedy-orbit remedy-orbit-one"></div>
+              <div class="remedy-orbit remedy-orbit-two"></div>
+              <div class="remedy-phone">
+                <div class="remedy-phone-top">
+                  <span>9:41</span>
+                  <i></i>
+                </div>
+                <div class="remedy-greeting">
+                  <small>Good morning</small>
+                  <strong>Today&apos;s medication</strong>
+                </div>
+                <div class="remedy-dose-card">
+                  <div>
+                    <span>Amoxicillin</span>
+                    <small>500 mg / 1 capsule</small>
+                  </div>
+                  <time datetime="08:00">08:00</time>
+                  <i></i>
+                </div>
+                <div class="remedy-progress">
+                  <span>2 of 3 doses complete</span>
+                  <b><i></i></b>
+                </div>
               </div>
-              <div class="focus-dashboard">
-                <div class="focus-camera">
-                  <span class="camera-corner camera-corner-one"></span>
-                  <span class="camera-corner camera-corner-two"></span>
-                  <span class="camera-corner camera-corner-three"></span>
-                  <span class="camera-corner camera-corner-four"></span>
-                  <div class="focus-face">
-                    <span></span>
-                  </div>
-                  <p>Face detected</p>
-                </div>
-                <div class="focus-metrics">
-                  <div class="focus-score">
-                    <div>
-                      <strong>87</strong>
-                      <span>Focus score</span>
-                    </div>
-                  </div>
-                  <div class="device-signal">
-                    <span>ESP32 signal</span>
-                    <i></i><i></i><i></i><i></i>
-                  </div>
-                </div>
+              <div class="remedy-ai"><strong>AI</strong><span>Ask Remedy</span></div>
+              <div class="tile-status">
+                <i></i>
+                <span>Scheduled</span>
               </div>
             </a>
 
-            <div class="project-content">
-              <div class="project-meta">
-                <span>01</span>
-                <span>AI + Hardware</span>
+            <div class="project-tile-copy">
+              <div class="project-tile-meta">
+                <span>01 / Featured</span>
+                <span>Mobile health</span>
               </div>
-              <h3>HackLondon2026</h3>
+              <h3>RemedyDose</h3>
               <p>
-                Focus-aware study companion using computer vision, Claude API, and an ESP32 device to connect software
-                feedback with a physical signal.
+                A full-stack medication companion with biometric authentication, scheduled reminders, cloud health logs,
+                and AI-powered assistance.
               </p>
-              <ul class="project-tags" aria-label="HackLondon2026 technologies">
-                <li>Python</li>
-                <li>OpenCV</li>
-                <li>Claude API</li>
-                <li>ESP32</li>
+              <ul class="project-tile-tags" aria-label="RemedyDose technologies">
+                <li class="tag-react">
+                  <img src="https://cdn.simpleicons.org/react/61DAFB" alt="" aria-hidden="true" />
+                  React Native
+                </li>
+                <li class="tag-expo">
+                  <img src="https://cdn.simpleicons.org/expo/FFFFFF" alt="" aria-hidden="true" />
+                  Expo
+                </li>
+                <li class="tag-appwrite">
+                  <img src="https://cdn.simpleicons.org/appwrite/FD366E" alt="" aria-hidden="true" />
+                  Appwrite
+                </li>
+                <li class="tag-huggingface">
+                  <img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="" aria-hidden="true" />
+                  Hugging Face
+                </li>
               </ul>
-              <a class="project-link" href="https://github.com/darkcom109/HackLondon2026" target="_blank" rel="noreferrer">
-                View repository <span aria-hidden="true">&nearr;</span>
+              <a
+                class="project-tile-link"
+                href="https://github.com/darkcom109/RemedyDose"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View project <span aria-hidden="true">&nearr;</span>
               </a>
             </div>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-tile project-tile-compact reveal">
             <a
-              class="project-preview preview-terminal"
+              class="project-tile-visual tile-git-visual"
               href="https://github.com/darkcom109/iGITit"
               target="_blank"
               rel="noreferrer"
-              aria-label="Open the iGITit repository"
+              aria-label="View iGITit on GitHub"
             >
-              <div class="terminal-bar">
-                <span></span><span></span><span></span>
-                <small>lesson-04</small>
-              </div>
-              <div class="terminal-body">
-                <p><i>$</i> git status</p>
-                <p class="terminal-response">On branch main</p>
-                <p><i>$</i> git add .</p>
-                <p><i>$</i> git commit -m <em>"progress"</em><b></b></p>
-              </div>
-              <div class="lesson-progress">
-                <span>Learning path</span>
-                <strong>04 / 08</strong>
-                <i></i>
+              <div class="tile-terminal">
+                <div class="tile-terminal-bar"><i></i><i></i><i></i></div>
+                <div class="tile-terminal-lines">
+                  <p><span>$</span> git status</p>
+                  <p>On branch main</p>
+                  <p><span>$</span> git commit <b></b></p>
+                </div>
               </div>
             </a>
 
-            <div class="project-content">
-              <div class="project-meta">
+            <div class="project-tile-copy">
+              <div class="project-tile-meta">
                 <span>02</span>
                 <span>Learning platform</span>
               </div>
               <h3>iGITit</h3>
-              <p>
-                Git learning platform designed around a practical terminal-style flow, helping beginners build confidence
-                through repeatable commands.
-              </p>
-              <ul class="project-tags" aria-label="iGITit technologies">
-                <li>Django</li>
-                <li>SQLite</li>
-                <li>Render</li>
+              <p>A practical Git learning platform built around a clear, terminal-led progression.</p>
+              <ul class="project-tile-tags" aria-label="iGITit technologies">
+                <li class="tag-next">
+                  <img src="https://cdn.simpleicons.org/nextdotjs/FFFFFF" alt="" aria-hidden="true" />
+                  Next.js
+                </li>
+                <li class="tag-neon">
+                  <img src="https://cdn.simpleicons.org/neon/00E699" alt="" aria-hidden="true" />
+                  Neon
+                </li>
+                <li class="tag-git">
+                  <img src="https://cdn.simpleicons.org/git/F05032" alt="" aria-hidden="true" />
+                  GIT Sandbox
+                </li>
               </ul>
-              <a class="project-link" href="https://github.com/darkcom109/iGITit" target="_blank" rel="noreferrer">
-                View repository <span aria-hidden="true">&nearr;</span>
+              <a class="project-tile-link" href="https://github.com/darkcom109/iGITit" target="_blank" rel="noreferrer">
+                View project <span aria-hidden="true">&nearr;</span>
               </a>
             </div>
           </article>
 
-          <article class="project-card reveal">
-            <a
-              class="project-preview preview-chat"
-              href="https://github.com/darkcom109/Quick-Chat"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Open the Quick-Chat repository"
+          <article class="project-tile project-tile-compact project-tile-speed reveal">
+            <div
+              class="project-tile-visual tile-speed-visual"
+              role="img"
+              aria-label="Speed.ai productivity dashboard showing tasks, finance, forecasting, and an AI assistant"
             >
-              <div class="chat-sidebar">
-                <span class="chat-avatar"></span>
-                <span class="chat-avatar"></span>
-                <span class="chat-avatar"></span>
-                <span class="chat-avatar"></span>
-              </div>
-              <div class="chat-window">
-                <div class="chat-topbar">
-                  <span><i></i>Online</span>
-                  <small>Quick-Chat</small>
+              <div class="speed-app">
+                <div class="speed-topbar">
+                  <strong>speed<span>.ai</span></strong>
+                  <i></i>
                 </div>
-                <div class="chat-messages">
-                  <p>Hey, is the build ready?</p>
-                  <p>Just shipped it.</p>
-                  <p>Perfect. Looks clean.</p>
+                <div class="speed-body">
+                  <div class="speed-rail" aria-hidden="true">
+                    <i></i><i></i><i></i><i></i>
+                  </div>
+                  <div class="speed-dashboard">
+                    <small>Good morning</small>
+                    <strong>Your day, in sync.</strong>
+                    <div class="speed-summary">
+                      <span><small>Tasks</small><b>08</b></span>
+                      <span><small>Saved</small><b>74%</b></span>
+                    </div>
+                    <div class="speed-chart" aria-hidden="true">
+                      <i></i><i></i><i></i><i></i><i></i><i></i>
+                    </div>
+                    <div class="speed-assistant"><i>AI</i><span>Plan my afternoon</span></div>
+                  </div>
                 </div>
-                <div class="chat-input"><span>Write a message...</span><i>&rarr;</i></div>
               </div>
-            </a>
+              <div class="tile-status"><i></i><span>In development</span></div>
+            </div>
 
-            <div class="project-content">
-              <div class="project-meta">
+            <div class="project-tile-copy">
+              <div class="project-tile-meta">
                 <span>03</span>
-                <span>Real-time MERN</span>
+                <span>Productivity workspace</span>
               </div>
-              <h3>Quick-Chat</h3>
-              <p>
-                Real-time messaging app with sockets, media upload, and persistent chat state across a modern MERN stack.
-              </p>
-              <ul class="project-tags" aria-label="Quick-Chat technologies">
-                <li>React</li>
-                <li>Node.js</li>
-                <li>MongoDB</li>
-                <li>Socket.io</li>
+              <h3>speed.ai</h3>
+              <p>A full-stack workspace unifying tasks, finances, forecasts, notes, live transport, and a tool-using AI assistant.</p>
+              <ul class="project-tile-tags" aria-label="speed.ai technologies">
+                <li class="tag-react">
+                  <img src="https://cdn.simpleicons.org/react/61DAFB" alt="" aria-hidden="true" />
+                  React.js
+                </li>
+                <li class="tag-typescript">
+                  <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="" aria-hidden="true" />
+                  TypeScript
+                </li>
+                <li class="tag-express">
+                  <img src="https://cdn.simpleicons.org/express/FFFFFF" alt="" aria-hidden="true" />
+                  Express.js
+                </li>
+                <li class="tag-prisma">
+                  <img src="https://cdn.simpleicons.org/prisma/8B9DFF" alt="" aria-hidden="true" />
+                  Prisma
+                </li>
               </ul>
-              <a class="project-link" href="https://github.com/darkcom109/Quick-Chat" target="_blank" rel="noreferrer">
-                View repository <span aria-hidden="true">&nearr;</span>
-              </a>
+              <span class="project-tile-link project-tile-private">
+                Private build <span aria-hidden="true">&bull;</span>
+              </span>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="stack section-shell" id="stack" aria-labelledby="stack-title">
-        <div class="stack-heading reveal">
+      <section class="experience page-section" id="experience" aria-labelledby="experience-title">
+        <header class="experience-heading reveal">
           <div>
-            <p class="section-kicker"><span>04</span> Stack</p>
-            <h2 id="stack-title">Tools chosen for <em>the job.</em></h2>
+            <p class="section-index">01 / Experience</p>
+            <h2 id="experience-title">Work that <em>shipped.</em></h2>
           </div>
           <p>
-            A focused toolkit for moving from interface to API, deployment, and connected experiences without adding
-            complexity for its own sake.
+            Commercial delivery, teaching, and engineering experience alongside independent product work.
           </p>
-        </div>
+        </header>
 
-        <div class="stack-grid">
-          <article class="stack-card stack-card-frontend reveal">
-            <div class="stack-card-heading">
-              <span>01 / Interface</span>
-              <h3>Frontend</h3>
-              <p>Fast, accessible interfaces with strong structure and polished interaction.</p>
+        <div class="experience-list">
+          <article class="experience-item reveal">
+            <time datetime="2026-03">Mar 2026 — Present</time>
+            <div>
+              <h3>Software Engineer Intern</h3>
+              <p class="experience-company"><i></i>Kajla Revenue Intelligence</p>
             </div>
-
-            <div class="stack-preview stack-preview-browser" aria-hidden="true">
-              <div class="stack-browser-bar">
-                <span></span><span></span><span></span>
-                <small>localhost:5173</small>
-              </div>
-              <div class="stack-browser-body">
-                <div class="stack-browser-nav"></div>
-                <div class="stack-browser-copy">
-                  <span></span>
-                  <span></span>
-                </div>
-                <div class="stack-browser-button"></div>
-                <div class="stack-cursor">
-                  <i></i>
-                  <small>12ms</small>
-                </div>
-              </div>
-            </div>
-
-            <ul class="stack-tags" aria-label="Frontend technologies">
-              <li>React</li>
-              <li>TypeScript</li>
-              <li>Vite</li>
-              <li>Tailwind</li>
-              <li>shadcn/ui</li>
-              <li>Vitest</li>
-            </ul>
-          </article>
-
-          <article class="stack-card stack-card-backend reveal">
-            <div class="stack-card-heading">
-              <span>02 / Logic</span>
-              <h3>Backend</h3>
-              <p>Readable APIs and data flows built to remain understandable as products grow.</p>
-            </div>
-
-            <div class="stack-preview stack-preview-api" aria-hidden="true">
-              <div class="api-request">
-                <span>POST</span>
-                <code>/api/projects</code>
-                <i>201</i>
-              </div>
-              <div class="api-request">
-                <span>GET</span>
-                <code>/api/messages</code>
-                <i>200</i>
-              </div>
-              <div class="api-request">
-                <span>PATCH</span>
-                <code>/api/profile</code>
-                <i>204</i>
-              </div>
-              <div class="api-pulse"></div>
-            </div>
-
-            <ul class="stack-tags" aria-label="Backend technologies">
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>Django</li>
-              <li>FastAPI</li>
-              <li>PostgreSQL</li>
-              <li>SQLite</li>
-            </ul>
-          </article>
-
-          <article class="stack-card stack-card-systems reveal">
-            <div class="stack-card-heading">
-              <span>03 / Connected</span>
-              <h3>Systems</h3>
-              <p>Software that can see, respond, and communicate with models and physical devices.</p>
-            </div>
-
-            <div class="stack-preview stack-preview-signal" aria-hidden="true">
-              <div class="signal-device">
-                <span>ESP32</span>
-                <i></i>
-              </div>
-              <div class="signal-wave">
-                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-              </div>
-              <div class="signal-status"><span></span>Device connected</div>
-            </div>
-
-            <ul class="stack-tags" aria-label="Systems technologies">
+            <p>Built a Python lead-generation scraper and an interactive landing page deployed on Cloudflare Workers.</p>
+            <ul aria-label="Kajla skills">
               <li>Python</li>
-              <li>OpenCV</li>
-              <li>AI APIs</li>
-              <li>ESP32</li>
-              <li>Arduino</li>
-              <li>BLE</li>
+              <li>Scraping</li>
+              <li>Cloudflare</li>
+            </ul>
+          </article>
+
+          <article class="experience-item reveal">
+            <time datetime="2026-01">Jan 2026 — Present</time>
+            <div>
+              <h3>Teaching Assistant</h3>
+              <p class="experience-company"><i></i>Code Camp</p>
+            </div>
+            <p>Teach programming and computing fundamentals through practical, age-appropriate creative projects.</p>
+            <ul aria-label="Code Camp skills">
+              <li>Programming</li>
+              <li>Teaching</li>
+            </ul>
+          </article>
+
+          <article class="experience-item reveal">
+            <time datetime="2025-08">Aug 2025 — Jan 2026</time>
+            <div>
+              <h3>Website Developer</h3>
+              <p class="experience-company">Independent client work</p>
+            </div>
+            <p>Designed and shipped responsive commercial sites for Alinsons and BlackStarFleet on Cloudflare Workers.</p>
+            <ul aria-label="Client website skills">
+              <li>Frontend</li>
+              <li>Web design</li>
+              <li>Clients</li>
+            </ul>
+          </article>
+
+          <article class="experience-item reveal">
+            <time datetime="2025-09">Sep 2025 — Oct 2025</time>
+            <div>
+              <h3>Technical Operations Intern</h3>
+              <p class="experience-company">Celestegrity</p>
+            </div>
+            <p>Created a clean, accessible landing page communicating a youth-led nonprofit&apos;s mission and initiatives.</p>
+            <ul aria-label="Celestegrity skills">
+              <li>Accessibility</li>
+              <li>Responsive UI</li>
+            </ul>
+          </article>
+
+          <article class="experience-item reveal">
+            <time datetime="2023-06">Jun 2023</time>
+            <div>
+              <h3>UNIQ Engineering Programme</h3>
+              <p class="experience-company">University of Oxford</p>
+            </div>
+            <p>Completed hands-on engineering challenges across C programming, robotics, CAD/CAM, and product design.</p>
+            <ul aria-label="Oxford UNIQ skills">
+              <li>C</li>
+              <li>Robotics</li>
+              <li>CAD/CAM</li>
             </ul>
           </article>
         </div>
 
-        <div class="stack-pipeline reveal" aria-label="Product delivery process">
-          <span>Idea</span>
-          <i></i>
-          <span>Interface</span>
-          <i></i>
-          <span>API</span>
-          <i></i>
-          <span>Test</span>
-          <i></i>
-          <span>Ship</span>
-          <b aria-hidden="true"></b>
+        <p class="experience-extra reveal">
+          Earlier creative experience includes social video editing, graphic design, and digital content production.
+        </p>
+      </section>
+
+      <section class="capabilities page-section" id="capabilities" aria-labelledby="capabilities-title">
+        <header class="capabilities-heading reveal">
+          <div>
+            <p class="section-index">03 / Capabilities</p>
+            <h2 id="capabilities-title">What I build <em>best.</em></h2>
+          </div>
+          <p>
+            I work across the product stack, with a focus on polished interfaces, dependable systems, practical AI,
+            and software that connects to the real world.
+          </p>
+        </header>
+
+        <div class="capability-list">
+          <article class="capability capability-interface reveal">
+            <div class="capability-top">
+              <span>01 / Product engineering</span>
+              <div class="capability-object" aria-hidden="true"><i></i><b></b></div>
+            </div>
+            <div class="capability-copy">
+              <h3>Frontend systems</h3>
+              <ul aria-label="Frontend technologies">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Vite</li>
+                <li>Testing</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="capability capability-backend reveal">
+            <div class="capability-top">
+              <span>02 / Systems engineering</span>
+              <div class="capability-object" aria-hidden="true"><i></i><b></b></div>
+            </div>
+            <div class="capability-copy">
+              <h3>Backend & cloud</h3>
+              <ul aria-label="Backend technologies">
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>PostgreSQL</li>
+                <li>Cloudflare</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="capability capability-ai reveal">
+            <div class="capability-top">
+              <span>03 / Applied intelligence</span>
+              <div class="capability-object" aria-hidden="true"><i></i><b></b></div>
+            </div>
+            <div class="capability-copy">
+              <h3>AI & automation</h3>
+              <ul aria-label="AI and automation technologies">
+                <li>Python</li>
+                <li>Model APIs</li>
+                <li>OpenCV</li>
+                <li>Agents</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="capability capability-connected reveal">
+            <div class="capability-top">
+              <span>04 / Physical computing</span>
+              <div class="capability-object" aria-hidden="true"><i></i><b></b></div>
+            </div>
+            <div class="capability-copy">
+              <h3>Connected systems</h3>
+              <ul aria-label="Connected system technologies">
+                <li>ESP32</li>
+                <li>Arduino</li>
+                <li>BLE</li>
+                <li>Real-time</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
-        <p class="section-kicker reveal">Contact</p>
-        <h2 id="contact-title" class="reveal">Let's build something polished.</h2>
-        <p class="contact-copy reveal">
-          I am interested in full-stack product work, AI-assisted tools, and systems that bridge software with devices.
-        </p>
-        <div class="text-actions reveal">
-          <a href="mailto:your.email@example.com">Email me</a>
-          <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="#top">Back to top</a>
+      <section class="contact page-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-art" aria-hidden="true">
+          <img src="assets/abstract-ribbon.png" alt="" />
+          <div class="contact-art-glow"></div>
         </div>
+        <p class="section-index reveal">04 / Contact</p>
+        <div class="contact-main reveal">
+          <h2 id="contact-title">Let&apos;s make something <em>worth using.</em></h2>
+          <div class="contact-actions">
+            <a class="contact-action contact-action-email" href="mailto:garciavalentino2006@gmail.com">
+              <span>
+                <small>Email</small>
+                <strong>garciavalentino2006@gmail.com</strong>
+              </span>
+              <i aria-hidden="true">&nearr;</i>
+            </a>
+            <a
+              class="contact-action contact-action-linkedin"
+              href="https://www.linkedin.com/in/valentino-garcia-980a54321/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>
+                <small>Connect</small>
+                <strong>LinkedIn</strong>
+              </span>
+              <i aria-hidden="true">&nearr;</i>
+            </a>
+          </div>
+        </div>
+        <footer>
+          <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
+          <span>London, UK</span>
+          <a href="#top">Top &uarr;</a>
+        </footer>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <span>&copy; <span data-year></span> Valentino Garcia</span>
-      <span>Software engineering portfolio</span>
-    </footer>
-
-    <script src="assets/scripts/app.js"></script>
   </body>
 </html>
