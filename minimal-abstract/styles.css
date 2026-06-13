@@ -1639,8 +1639,8 @@ h1::first-line {
   }
 
   .hero-copy {
-    align-self: center;
-    padding: 78px 0 34px;
+    align-self: start;
+    padding: 42px 0 34px;
   }
 
   .eyebrow {
@@ -1971,11 +1971,15 @@ h1::first-line {
 
   .contact {
     min-height: calc(100svh - 16px);
-    padding: 24px 20px;
+    padding: 30px 20px 24px;
+  }
+
+  .contact .section-index {
+    margin-bottom: 24px;
   }
 
   .contact-main {
-    min-height: calc(100svh - 170px);
+    min-height: calc(100svh - 200px);
     justify-content: flex-end;
     padding-bottom: 60px;
   }
@@ -2181,9 +2185,10 @@ h1::first-line {
 .project-tile-featured .project-tile-copy {
   display: grid;
   align-items: end;
-  grid-template-columns: minmax(320px, 0.95fr) minmax(0, 1.05fr);
-  gap: 14px 36px;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  gap: 14px clamp(24px, 2.4vw, 38px);
   padding: 30px 34px 34px;
+  container-type: inline-size;
 }
 
 .project-tile-meta {
@@ -2210,8 +2215,12 @@ h1::first-line {
 }
 
 .project-tile-featured .project-tile-copy h3 {
+  min-width: 0;
+  max-width: 100%;
   margin: 0;
-  font-size: clamp(3rem, 4vw, 4.8rem);
+  font-size: clamp(2.6rem, 5cqw, 3.25rem);
+  line-height: 0.92;
+  white-space: nowrap;
 }
 
 .project-tile-copy > p {
@@ -2223,6 +2232,7 @@ h1::first-line {
 }
 
 .project-tile-featured .project-tile-copy > p {
+  min-width: 0;
   align-self: center;
   font-size: 0.82rem;
 }
@@ -2242,12 +2252,58 @@ h1::first-line {
 }
 
 .project-tile-tags li {
-  padding: 5px 8px;
-  border: 1px solid var(--line);
+  --tag-color: #a995ff;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 9px;
+  border: 1px solid color-mix(in srgb, var(--tag-color) 42%, transparent);
   border-radius: 999px;
-  color: var(--faint);
+  color: color-mix(in srgb, var(--tag-color) 62%, white);
+  background: color-mix(in srgb, var(--tag-color) 11%, transparent);
   font-size: 0.52rem;
   font-weight: 600;
+}
+
+.project-tile-tags img {
+  width: 12px;
+  height: 12px;
+  flex: 0 0 12px;
+  object-fit: contain;
+}
+
+.tag-react {
+  --tag-color: #61dafb;
+}
+
+.tag-expo,
+.tag-next,
+.tag-express {
+  --tag-color: #f6f5f2;
+}
+
+.tag-appwrite {
+  --tag-color: #fd366e;
+}
+
+.tag-huggingface {
+  --tag-color: #ffd21e;
+}
+
+.tag-neon {
+  --tag-color: #00e699;
+}
+
+.tag-git {
+  --tag-color: #f05032;
+}
+
+.tag-typescript {
+  --tag-color: #4d9fe8;
+}
+
+.tag-prisma {
+  --tag-color: #8b9dff;
 }
 
 .project-tile-featured .project-tile-link {
@@ -3033,8 +3089,13 @@ h1::first-line {
     font-size: 0.69rem;
   }
 
-  .project-tile-tags li:nth-child(n + 3) {
-    display: none;
+  .project-tile-tags {
+    gap: 5px;
+  }
+
+  .project-tile-tags li {
+    padding: 4px 7px;
+    font-size: 0.5rem;
   }
 
   .remedy-orbit-one {
