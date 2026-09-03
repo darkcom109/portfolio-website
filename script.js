@@ -2,6 +2,7 @@ document.documentElement.classList.add("js");
 
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".site-nav");
+const menuLabel = menuButton?.querySelector("span");
 const revealItems = document.querySelectorAll(".reveal");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -9,6 +10,7 @@ function closeMenu() {
   if (!menuButton || !navigation) return;
   menuButton.setAttribute("aria-expanded", "false");
   navigation.classList.remove("is-open");
+  if (menuLabel) menuLabel.textContent = "Menu";
 }
 
 if (menuButton && navigation) {
@@ -16,6 +18,7 @@ if (menuButton && navigation) {
     const isOpen = menuButton.getAttribute("aria-expanded") === "true";
     menuButton.setAttribute("aria-expanded", String(!isOpen));
     navigation.classList.toggle("is-open", !isOpen);
+    if (menuLabel) menuLabel.textContent = isOpen ? "Menu" : "Close";
   });
 
   navigation.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
