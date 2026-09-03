@@ -3,487 +3,178 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Valentino Garcia, a software engineer creating thoughtful digital products and connected experiences."
-    />
-    <title>Valentino Garcia | Digital Product Engineer</title>
+    <meta name="description" content="Valentino Garcia is a London-based software engineer working across full-stack products, applied AI, and connected systems." />
+    <title>Valentino Garcia | Software Engineer</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <meta name="theme-color" content="#111319" />
+    <meta name="theme-color" content="#f2efe7" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <main>
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-art" aria-hidden="true">
-          <img src="assets/abstract-ribbon.png" alt="" />
-          <div class="hero-art-glow"></div>
-        </div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-        <header class="site-header">
-          <a class="brand" href="#top" aria-label="Valentino Garcia home">
-            <span class="brand-mark" aria-hidden="true"></span>
-            <span>Valentino Garcia</span>
-          </a>
+    <div class="site-frame" id="top">
+      <header class="topbar">
+        <a class="wordmark" href="#top" aria-label="Valentino Garcia, home">
+          <span class="wordmark-mark" aria-hidden="true">VG</span>
+          <span><strong>Valentino Garcia</strong><small>Software Engineer</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span>Menu</span><i aria-hidden="true"></i>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="#profile">Profile</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="availability"><i aria-hidden="true"></i>Open to software roles</p>
+      </header>
 
-          <nav aria-label="Primary navigation">
-            <a href="#experience">Experience</a>
-            <a href="#work">Projects</a>
-            <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="#contact">Contact</a>
-          </nav>
-
-          <p class="availability">
-            <i aria-hidden="true"></i>
-            <span class="availability-full">Open to software roles</span>
-            <span class="availability-short">Open</span>
-          </p>
-        </header>
-
-        <div class="hero-copy">
-          <p class="eyebrow">Software engineer / London, UK</p>
-          <h1 id="hero-title">
-            Full-stack, AI
-            & Connected Systems.
-          </h1>
-          <div class="hero-intro">
-            <p>
-              Currently a 2nd year computer science student at King's College London and
-              a Software Engineer Intern at Kajla Revenue Intelligence.
-            </p>
-            <div class="hero-actions">
-              <a class="hero-action-primary" href="#experience">View experience <span aria-hidden="true">&darr;</span></a>
-              <a href="#work">Side projects <span aria-hidden="true">&nearr;</span></a>
+      <main id="main-content">
+        <section class="masthead" id="profile" aria-labelledby="page-title">
+          <div class="masthead-copy">
+            <h1 id="page-title">Valentino Garcia</h1>
+            <p class="masthead-role">Software Engineer <span>London, UK</span></p>
+            <div class="masthead-actions" aria-label="Professional profiles">
+              <a class="text-link" href="https://www.linkedin.com/in/valentino-garcia-980a54321/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#projects">Projects <span aria-hidden="true">↓</span></a>
             </div>
           </div>
-        </div>
 
-        <div class="hero-proof" aria-label="Current experience and core technologies">
-          <div>
-            <span>Current role</span>
-            <strong>Software Engineer Intern</strong>
-            <small>Kajla Revenue Intelligence</small>
-          </div>
-          <div>
-            <span>Also</span>
-            <strong>Teaching Assistant</strong>
-            <small>Code Camp</small>
-          </div>
-          <div>
-            <span>Core toolkit</span>
-            <strong>Python / React / Cloudflare</strong>
-            <small>Full-stack + connected systems</small>
-          </div>
-        </div>
-      </section>
+          <dl class="masthead-facts" aria-label="At a glance">
+            <div><dt>Current role</dt><dd>Software Engineer Intern<br /><span>Kajla Revenue Intelligence</span></dd></div>
+            <div><dt>Education</dt><dd>BSc Computer Science<br /><span>King&apos;s College London</span></dd></div>
+          </dl>
+        </section>
 
-      <section class="work page-section" id="work" aria-labelledby="work-title">
-        <header class="work-compact-heading reveal">
-          <div>
-            <p class="section-index">02 / Side projects</p>
-            <h2 id="work-title">Built beyond <em>the brief.</em></h2>
-          </div>
-          <div class="work-heading-copy">
-            <p>Independent builds exploring AI, learning tools, real-time products, and connected hardware.</p>
-            <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">
-              View GitHub <span aria-hidden="true">&nearr;</span>
-            </a>
-          </div>
-        </header>
+        <div class="cv-layout">
+          <div class="cv-main">
+            <section class="resume-section" id="experience" aria-labelledby="experience-title">
+              <header class="section-heading reveal">
+                <div><p class="section-number">Experience</p><h2 id="experience-title">Professional experience</h2></div>
+              </header>
 
-        <div class="project-showcase">
-          <article class="project-tile project-tile-featured reveal">
-            <a
-              class="project-tile-visual tile-remedy-visual"
-              href="https://github.com/darkcom109/RemedyDose"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View RemedyDose on GitHub"
-            >
-              <div class="remedy-orbit remedy-orbit-one"></div>
-              <div class="remedy-orbit remedy-orbit-two"></div>
-              <div class="remedy-phone">
-                <div class="remedy-phone-top">
-                  <span>9:41</span>
-                  <i></i>
-                </div>
-                <div class="remedy-greeting">
-                  <small>Good morning</small>
-                  <strong>Today&apos;s medication</strong>
-                </div>
-                <div class="remedy-dose-card">
-                  <div>
-                    <span>Amoxicillin</span>
-                    <small>500 mg / 1 capsule</small>
+              <div class="timeline">
+                <article class="timeline-entry reveal">
+                  <div class="entry-date"><time datetime="2026-03">Mar 2026</time><span>Present</span></div>
+                  <div class="entry-body">
+                    <header><div><h3>Software Engineer Intern</h3><p>Kajla Revenue Intelligence</p></div><span class="entry-index">01</span></header>
+                    <ul><li>Built a Python lead-generation scraper supporting commercial prospecting workflows.</li><li>Developed an interactive landing page and deployed it using Cloudflare Workers.</li></ul>
+                    <p class="entry-tools">Python · Web scraping · Cloudflare</p>
                   </div>
-                  <time datetime="08:00">08:00</time>
-                  <i></i>
-                </div>
-                <div class="remedy-progress">
-                  <span>2 of 3 doses complete</span>
-                  <b><i></i></b>
-                </div>
-                <div class="remedy-ai">
-                  <div>
-                    <span>AI dose guidance</span>
-                    <i aria-hidden="true"></i>
+                </article>
+
+                <article class="timeline-entry reveal">
+                  <div class="entry-date"><time datetime="2026-01">Jan 2026</time><span>Present</span></div>
+                  <div class="entry-body">
+                    <header><div><h3>Teaching Assistant</h3><p>Code Camp</p></div><span class="entry-index">02</span></header>
+                    <ul><li>Teach programming and computing fundamentals through practical, age-appropriate projects.</li><li>Help students turn unfamiliar concepts into working creative outcomes.</li></ul>
+                    <p class="entry-tools">Programming · Teaching · Communication</p>
                   </div>
-                  <strong>Can I take this with food?</strong>
-                  <small>Get a clear answer based on your medication.</small>
-                </div>
-              </div>
-            </a>
+                </article>
 
-            <div class="project-tile-copy">
-              <div class="project-tile-meta">
-                <span>01 / Featured</span>
-                <span>Mobile health</span>
-              </div>
-              <h3>RemedyDose</h3>
-              <p>
-                A full-stack medication companion with biometric authentication, scheduled reminders, cloud health logs,
-                and AI-powered assistance.
-              </p>
-              <ul class="project-tile-tags" aria-label="RemedyDose technologies">
-                <li class="tag-react">
-                  <img src="https://cdn.simpleicons.org/react/61DAFB" alt="" aria-hidden="true" />
-                  React Native
-                </li>
-                <li class="tag-expo">
-                  <img src="https://cdn.simpleicons.org/expo/FFFFFF" alt="" aria-hidden="true" />
-                  Expo
-                </li>
-                <li class="tag-appwrite">
-                  <img src="https://cdn.simpleicons.org/appwrite/FD366E" alt="" aria-hidden="true" />
-                  Appwrite
-                </li>
-                <li class="tag-huggingface">
-                  <img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="" aria-hidden="true" />
-                  Hugging Face
-                </li>
-              </ul>
-              <a
-                class="project-tile-link"
-                href="https://github.com/darkcom109/RemedyDose"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View project <span aria-hidden="true">&nearr;</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="project-tile project-tile-compact reveal">
-            <a
-              class="project-tile-visual tile-git-visual"
-              href="https://github.com/darkcom109/iGITit"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View iGITit on GitHub"
-            >
-              <div class="tile-terminal">
-                <div class="tile-terminal-bar"><i></i><i></i><i></i></div>
-                <div class="tile-terminal-lines">
-                  <p><span>$</span> git status</p>
-                  <p>On branch main</p>
-                  <p><span>$</span> git commit <b></b></p>
-                </div>
-              </div>
-            </a>
-
-            <div class="project-tile-copy">
-              <div class="project-tile-meta">
-                <span>02</span>
-                <span>Learning platform</span>
-              </div>
-              <h3>iGITit</h3>
-              <p>A practical Git learning platform built around a clear, terminal-led progression.</p>
-              <ul class="project-tile-tags" aria-label="iGITit technologies">
-                <li class="tag-next">
-                  <img src="https://cdn.simpleicons.org/nextdotjs/FFFFFF" alt="" aria-hidden="true" />
-                  Next.js
-                </li>
-                <li class="tag-neon">
-                  <img src="https://cdn.simpleicons.org/neon/00E699" alt="" aria-hidden="true" />
-                  Neon
-                </li>
-                <li class="tag-git">
-                  <img src="https://cdn.simpleicons.org/git/F05032" alt="" aria-hidden="true" />
-                  GIT Sandbox
-                </li>
-              </ul>
-              <a class="project-tile-link" href="https://github.com/darkcom109/iGITit" target="_blank" rel="noreferrer">
-                View project <span aria-hidden="true">&nearr;</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="project-tile project-tile-compact project-tile-speed reveal">
-            <div
-              class="project-tile-visual tile-speed-visual"
-              role="img"
-              aria-label="Speed.ai productivity dashboard showing tasks, finance, forecasting, and an AI assistant"
-            >
-              <div class="speed-app">
-                <div class="speed-topbar">
-                  <strong>speed<span>.ai</span></strong>
-                  <i></i>
-                </div>
-                <div class="speed-body">
-                  <div class="speed-rail" aria-hidden="true">
-                    <i></i><i></i><i></i><i></i>
+                <article class="timeline-entry reveal">
+                  <div class="entry-date"><time datetime="2026-01">Jan 2026</time><span>Apr 2026</span></div>
+                  <div class="entry-body">
+                    <header><div><h3>Timely — Software Engineering Project</h3><p>King&apos;s College London · Academic project</p></div><span class="entry-index">03</span></header>
+                    <ul><li>Collaborated in a 10-person team over 10 weeks to develop a full-stack time-management application using Django, React, PostgreSQL, and CI/CD deployment with Cloudflare.</li><li>Refactored core components for maintainability and developed automated frontend and backend tests, achieving 90% test coverage.</li><li>Containerised development with Docker and established strict code-review guidelines.</li></ul>
+                    <p class="entry-tools">Django · React · PostgreSQL · Docker · CI/CD · Testing</p>
                   </div>
-                  <div class="speed-dashboard">
-                    <small>Good morning</small>
-                    <strong>Your day, in sync.</strong>
-                    <div class="speed-summary">
-                      <span><small>Tasks</small><b>08</b></span>
-                      <span><small>Saved</small><b>74%</b></span>
-                    </div>
-                    <div class="speed-chart" aria-hidden="true">
-                      <i></i><i></i><i></i><i></i><i></i><i></i>
-                    </div>
-                    <div class="speed-assistant"><i>AI</i><span>Plan my afternoon</span></div>
+                </article>
+
+                <article class="timeline-entry reveal">
+                  <div class="entry-date"><time datetime="2025-08">Aug 2025</time><span>Jan 2026</span></div>
+                  <div class="entry-body">
+                    <header><div><h3>Website Developer</h3><p>Independent client work</p></div><span class="entry-index">04</span></header>
+                    <ul><li>Designed and shipped responsive commercial websites for Alinsons and BlackStarFleet.</li><li>Handled interface design, implementation, and Cloudflare Workers deployment.</li></ul>
+                    <p class="entry-tools">Frontend · Web design · Client delivery</p>
                   </div>
-                </div>
+                </article>
+
+                <article class="timeline-entry reveal">
+                  <div class="entry-date"><time datetime="2025-09">Sep 2025</time><span>Oct 2025</span></div>
+                  <div class="entry-body">
+                    <header><div><h3>Technical Operations Intern</h3><p>Celestegrity</p></div><span class="entry-index">05</span></header>
+                    <ul><li>Created an accessible landing page for a youth-led nonprofit.</li><li>Translated its mission and initiatives into a clear, responsive experience.</li></ul>
+                    <p class="entry-tools">Accessibility · Responsive UI · Content structure</p>
+                  </div>
+                </article>
+
+                <article class="timeline-entry reveal">
+                  <div class="entry-date"><time datetime="2023-06">Jun 2023</time></div>
+                  <div class="entry-body">
+                    <header><div><h3>UNIQ Engineering Programme</h3><p>University of Oxford</p></div><span class="entry-index">06</span></header>
+                    <ul><li>Completed hands-on challenges spanning C programming, robotics, CAD/CAM, and product design.</li></ul>
+                    <p class="entry-tools">C · Robotics · CAD/CAM</p>
+                  </div>
+                </article>
               </div>
-              <div class="tile-status"><i></i><span>In development</span></div>
-            </div>
 
-            <div class="project-tile-copy">
-              <div class="project-tile-meta">
-                <span>03</span>
-                <span>Productivity workspace</span>
+              <p class="additional-note reveal">Additional creative experience includes social video editing, graphic design, and digital content production.</p>
+            </section>
+
+            <section class="resume-section projects-section" id="projects" aria-labelledby="projects-title">
+              <header class="section-heading reveal">
+                <div><p class="section-number">Selected projects</p><h2 id="projects-title">Projects</h2></div>
+                <a class="text-link" href="https://github.com/darkcom109" target="_blank" rel="noreferrer">All repositories <span aria-hidden="true">↗</span></a>
+              </header>
+
+              <div class="project-list">
+                <article class="project-entry reveal">
+                  <div class="project-copy">
+                    <div class="project-meta"><span>01 / Mobile health</span><span>Featured</span></div>
+                    <h3>RemedyDose</h3>
+                    <p>A medication companion combining biometric authentication, scheduled reminders, cloud health logs, and AI-assisted guidance in a focused mobile experience.</p>
+                    <ul class="tag-list" aria-label="RemedyDose technologies"><li>React Native</li><li>Expo</li><li>Appwrite</li><li>Hugging Face</li></ul>
+                    <a class="project-link" href="https://github.com/darkcom109/RemedyDose" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                  </div>
+                  <div class="project-preview preview-remedy" aria-hidden="true"><div class="preview-phone"><span>Today&apos;s medication</span><i></i><i></i><i></i></div></div>
+                </article>
+
+                <article class="project-entry reveal">
+                  <div class="project-copy">
+                    <div class="project-meta"><span>02 / Learning platform</span><span>Public</span></div>
+                    <h3>iGITit</h3>
+                    <p>A practical Git learning platform designed around a clear, terminal-led progression.</p>
+                    <ul class="tag-list" aria-label="iGITit technologies"><li>Next.js</li><li>Neon</li><li>Git sandbox</li></ul>
+                    <a class="project-link" href="https://github.com/darkcom109/iGITit" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                  </div>
+                  <div class="project-preview preview-terminal" aria-hidden="true"><div class="terminal-window"><span><i></i><i></i><i></i></span><p><b>$</b> git status<br />On branch main<br /><b>$</b> git commit <em></em></p></div></div>
+                </article>
+
+                <article class="project-entry reveal">
+                  <div class="project-copy">
+                    <div class="project-meta"><span>03 / Productivity</span><span>Public</span></div>
+                    <h3>speed.ai</h3>
+                    <p>A full-stack workspace bringing together tasks, finances, forecasts, notes, live transport, and a tool-using AI assistant.</p>
+                    <ul class="tag-list" aria-label="speed.ai technologies"><li>React</li><li>TypeScript</li><li>Express</li><li>Prisma</li></ul>
+                    <a class="project-link" href="https://github.com/darkcom109/speed.ai" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                  </div>
+                  <div class="project-preview preview-dashboard" aria-hidden="true"><div class="dashboard-window"><span>speed<em>.ai</em></span><div><i></i><i></i><i></i><i></i><i></i></div><p>Plan my afternoon</p></div></div>
+                </article>
               </div>
-              <h3>speed.ai</h3>
-              <p>A full-stack workspace unifying tasks, finances, forecasts, notes, live transport, and a tool-using AI assistant.</p>
-              <ul class="project-tile-tags" aria-label="speed.ai technologies">
-                <li class="tag-react">
-                  <img src="https://cdn.simpleicons.org/react/61DAFB" alt="" aria-hidden="true" />
-                  React.js
-                </li>
-                <li class="tag-typescript">
-                  <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="" aria-hidden="true" />
-                  TypeScript
-                </li>
-                <li class="tag-express">
-                  <img src="https://cdn.simpleicons.org/express/FFFFFF" alt="" aria-hidden="true" />
-                  Express.js
-                </li>
-                <li class="tag-prisma">
-                  <img src="https://cdn.simpleicons.org/prisma/8B9DFF" alt="" aria-hidden="true" />
-                  Prisma
-                </li>
-              </ul>
-              <span class="project-tile-link project-tile-private">
-                Private build <span aria-hidden="true">&bull;</span>
-              </span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="experience page-section" id="experience" aria-labelledby="experience-title">
-        <header class="experience-heading reveal">
-          <div>
-            <p class="section-index">01 / Experience</p>
-            <h2 id="experience-title">Work that <em>shipped.</em></h2>
-          </div>
-          <p>
-            Commercial delivery, teaching, and engineering experience alongside independent product work.
-          </p>
-        </header>
-
-        <div class="experience-list">
-          <article class="experience-item reveal">
-            <time datetime="2026-03">Mar 2026 — Present</time>
-            <div>
-              <h3>Software Engineer Intern</h3>
-              <p class="experience-company"><i></i>Kajla Revenue Intelligence</p>
-            </div>
-            <p>Built a Python lead-generation scraper and an interactive landing page deployed on Cloudflare Workers.</p>
-            <ul aria-label="Kajla skills">
-              <li>Python</li>
-              <li>Scraping</li>
-              <li>Cloudflare</li>
-            </ul>
-          </article>
-
-          <article class="experience-item reveal">
-            <time datetime="2026-01">Jan 2026 — Present</time>
-            <div>
-              <h3>Teaching Assistant</h3>
-              <p class="experience-company"><i></i>Code Camp</p>
-            </div>
-            <p>Teach programming and computing fundamentals through practical, age-appropriate creative projects.</p>
-            <ul aria-label="Code Camp skills">
-              <li>Programming</li>
-              <li>Teaching</li>
-            </ul>
-          </article>
-
-          <article class="experience-item reveal">
-            <time datetime="2025-08">Aug 2025 — Jan 2026</time>
-            <div>
-              <h3>Website Developer</h3>
-              <p class="experience-company">Independent client work</p>
-            </div>
-            <p>Designed and shipped responsive commercial sites for Alinsons and BlackStarFleet on Cloudflare Workers.</p>
-            <ul aria-label="Client website skills">
-              <li>Frontend</li>
-              <li>Web design</li>
-              <li>Clients</li>
-            </ul>
-          </article>
-
-          <article class="experience-item reveal">
-            <time datetime="2025-09">Sep 2025 — Oct 2025</time>
-            <div>
-              <h3>Technical Operations Intern</h3>
-              <p class="experience-company">Celestegrity</p>
-            </div>
-            <p>Created a clean, accessible landing page communicating a youth-led nonprofit&apos;s mission and initiatives.</p>
-            <ul aria-label="Celestegrity skills">
-              <li>Accessibility</li>
-              <li>Responsive UI</li>
-            </ul>
-          </article>
-
-          <article class="experience-item reveal">
-            <time datetime="2023-06">Jun 2023</time>
-            <div>
-              <h3>UNIQ Engineering Programme</h3>
-              <p class="experience-company">University of Oxford</p>
-            </div>
-            <p>Completed hands-on engineering challenges across C programming, robotics, CAD/CAM, and product design.</p>
-            <ul aria-label="Oxford UNIQ skills">
-              <li>C</li>
-              <li>Robotics</li>
-              <li>CAD/CAM</li>
-            </ul>
-          </article>
-        </div>
-
-        <p class="experience-extra reveal">
-          Earlier creative experience includes social video editing, graphic design, and digital content production.
-        </p>
-      </section>
-
-      <section class="capabilities page-section" id="capabilities" aria-labelledby="capabilities-title">
-        <header class="capabilities-heading reveal">
-          <div>
-            <p class="section-index">03 / Capabilities</p>
-            <h2 id="capabilities-title">What I build <em>best.</em></h2>
-          </div>
-          <p>
-            I work across the product stack, with a focus on polished interfaces, dependable systems, practical AI,
-            and software that connects to the real world.
-          </p>
-        </header>
-
-        <div class="capability-list">
-          <article class="capability capability-interface reveal">
-            <div class="capability-top">
-              <span>01 / Product engineering</span>
-              <div class="capability-object" aria-hidden="true"><i></i><b></b></div>
-            </div>
-            <div class="capability-copy">
-              <h3>Frontend systems</h3>
-              <ul aria-label="Frontend technologies">
-                <li>React</li>
-                <li>TypeScript</li>
-                <li>Vite</li>
-                <li>Testing</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="capability capability-backend reveal">
-            <div class="capability-top">
-              <span>02 / Systems engineering</span>
-              <div class="capability-object" aria-hidden="true"><i></i><b></b></div>
-            </div>
-            <div class="capability-copy">
-              <h3>Backend & cloud</h3>
-              <ul aria-label="Backend technologies">
-                <li>Node.js</li>
-                <li>Python</li>
-                <li>PostgreSQL</li>
-                <li>Cloudflare</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="capability capability-ai reveal">
-            <div class="capability-top">
-              <span>03 / Applied intelligence</span>
-              <div class="capability-object" aria-hidden="true"><i></i><b></b></div>
-            </div>
-            <div class="capability-copy">
-              <h3>AI & automation</h3>
-              <ul aria-label="AI and automation technologies">
-                <li>Python</li>
-                <li>Model APIs</li>
-                <li>OpenCV</li>
-                <li>Agents</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="capability capability-connected reveal">
-            <div class="capability-top">
-              <span>04 / Physical computing</span>
-              <div class="capability-object" aria-hidden="true"><i></i><b></b></div>
-            </div>
-            <div class="capability-copy">
-              <h3>Connected systems</h3>
-              <ul aria-label="Connected system technologies">
-                <li>ESP32</li>
-                <li>Arduino</li>
-                <li>BLE</li>
-                <li>Real-time</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact page-section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-art" aria-hidden="true">
-          <img src="assets/abstract-ribbon.png" alt="" />
-          <div class="contact-art-glow"></div>
-        </div>
-        <p class="section-index reveal">04 / Contact</p>
-        <div class="contact-main reveal">
-          <h2 id="contact-title">Let&apos;s make something <em>worth using.</em></h2>
-          <div class="contact-actions">
-            <a
-              class="contact-action contact-action-linkedin"
-              href="https://www.linkedin.com/in/valentino-garcia-980a54321/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span>
-                <small>Connect</small>
-                <strong>LinkedIn</strong>
-              </span>
-              <i aria-hidden="true">&nearr;</i>
-            </a>
+            </section>
           </div>
         </div>
-        <footer>
-          <a href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub</a>
-          <span>London, UK</span>
-          <a href="#top">Top &uarr;</a>
-        </footer>
-      </section>
-    </main>
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+          <div><p class="section-number">Contact</p><h2 id="contact-title">Interested in working <em>together?</em></h2></div>
+          <div class="contact-copy">
+            <p>I&apos;m open to software engineering opportunities and conversations about thoughtful technical work.</p>
+            <div>
+              <a class="button button-light" href="https://www.linkedin.com/in/valentino-garcia-980a54321/" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+              <a class="text-link text-link-light" href="https://github.com/darkcom109" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer"><p>Valentino Garcia · Software Engineer</p><p>London, UK</p><a href="#top">Back to top ↑</a></footer>
+    </div>
   </body>
 </html>
