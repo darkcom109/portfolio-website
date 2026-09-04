@@ -1739,16 +1739,17 @@ h1 {
   }
 
   .project-copy > p:not(.project-link) {
+    flex: 1 1 auto;
     font-size: 0.8rem;
     line-height: 1.6;
   }
 
   .tag-list {
-    margin: 18px 0 24px;
+    margin: 18px 0 12px;
   }
 
   .project-link {
-    margin-top: auto;
+    margin-top: 0;
   }
 
   .project-preview {
